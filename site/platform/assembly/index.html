@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Assembly - VestibularPlatform</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Assembly";
+    var mkdocs_page_input_path = "platform/assembly.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> VestibularPlatform</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Main platform</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../components/">Components</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Assembly</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Electrical setup and configuration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../wiring/wiring/">Connections</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../wiring/config/">Driver configuration</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Optical motion sensors, option 1, ADNS-2610</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sensors/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sensors/assembly/">Assembly</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sensors/characterization/">Characterization</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Optical motion sensors, option 2, ADNS-3050</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sensors_3050/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sensors_3050/assembly/">Assembly</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sensors_3050/characterization/">Characterization</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Optical motion sensors, option 3, PWM-3360</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sensors_3360/components/">Components</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Embedded screens</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../screens/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../screens/assembly/">Assembly</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../screens/VR/">Virtual Reality</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Head-holding system</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Headclamp</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Pupil Tracking system</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Characterization and validation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Characterization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/specification/">Specification</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Requirements</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">VestibularPlatform</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Main platform &raquo;</li>
+        
+      
+    
+    <li>Assembly</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="assembly-instructions">Assembly instructions</h1>
+<p>Start assembling the Acrylic laser cut part “Base” with the Thorlabs RS05P Pedestal posts using M6 screws. That posts are used to attach the rotary stage to the experimental table where the experiments are taking place.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure1" src="../assembly_img/Fig1-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 1. Base assembly</em></td>
+</tr>
+</tbody>
+</table>
+<p>Insert two M6 screws with their nuts in order to attach the tube guide where the horizontal tube goes through and connects with the elbow. Attach with M6 screws the two Thorlabs posts PH_50 and the TR_50 to the base.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure2" src="../assembly_img/Fig2-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 2. Rotary joint telescopic posts assembly</em></td>
+</tr>
+</tbody>
+</table>
+<p>The two Thorlabs PH_50 with the TR_50 are used to hold the rotary joint. In order to attach the rotary joint, you only need two M6 or two M4 with washers depending on the position of the TR_50 (in one side is M4 in the other is M6). The tubing can be installed now or at the end of the assembly.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure3" src="../assembly_img/Fig3-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 3.Rotary joint assembly</em></td>
+</tr>
+</tbody>
+</table>
+<p>Attach the seven Thorlabs RS150 posts to the base using M6 screws. </p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure4" src="../assembly_img/Fig4-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 4. Thorlabs RS150 assembly</em></td>
+</tr>
+</tbody>
+</table>
+<p>|<img alt="Gif 1" src="../gif/Base.gif" />|
+|:--:| 
+| <em>Base Assembly</em> |
+Once you have the rotary joint spacer 3D printed, insert M3 brass threaded inserts and then cure the part with UV light. </p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure5" src="../assembly_img/Fig5-Assembly-Instructions.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 5. Rotary joint spacer threaded inserts</em></td>
+</tr>
+</tbody>
+</table>
+<p>The Rotary Joint spacer is assembled with the rotary joint using 25 mm length M3 grab screws. These are inserted using the radial holes on the bottom of the part.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure6" src="../assembly_img/Fig6-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 6. Rotary joint spacer assembly</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure7" src="../assembly_img/Fig7-Assembly-Instructions.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 7. Rotary joint assembly</em></td>
+</tr>
+</tbody>
+</table>
+<p>The crossed roller bearing BRS RU124X must be assembled with the Platform 2 using ten M5 bolts and M5 nuts.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure8" src="../assembly_img/Fig8-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 8. Crossed roller bearing assembled with the Platform 2</em></td>
+</tr>
+</tbody>
+</table>
+<p>The manufacturer recommends the following installation method:
+| <img alt="Figure9" src="assembly_img/Fig9-Assembly-Instructions.PNG" /> |
+|:--:|
+| <em>Figure 9. Crossed roller bearing installation method (left) and Cross roller bearing installed (right)</em> |</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>On the laser cut part “Platform 2” it is recommended to make the chamfers for the M4 countersink screws that will hold the motor. This step is important because the head of the screws have to be at the same level as the surface of the Platform 2, otherwise they might touch the pulley or the belt.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure10" src="../assembly_img/Fig10-Assembly-Instructions.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 10. Detail of the countersink screws level with the surface</em></td>
+</tr>
+</tbody>
+</table>
+<p>Insert the four M4 screws with their nuts to hold the Nema 23 stepper motor with the motor spacer.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure11" src="../assembly_img/Fig11-Assembly-Instructions.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 11. Motor assembly</em></td>
+</tr>
+</tbody>
+</table>
+<p>The big pulley can be laser cut as shown in Figure 12. It is composed by six layers of acrylic (2 x <a href="../files/dxf/Big%20pulley%20%281%29.dxf">layer 1</a> in 5 mm thickness, 1 x <a href="../files/dxf/Big%20pulley%20%283%29.dxf">layer 2</a> in 5 mm thickness, 2 x <a href="../files/dxf/Big%20pulley%20%283%29.dxf">layer 2</a> in 3 mm thickness and 1 x <a href="../files/dxf/Big%20pulley%20%282%29.dxf">layer 3</a> in 3 mm thickness). The threaded inserts are attached like in the previous version. In this case we recommend to heat them with the soldering iron until they melt the plastic around and go through the different layers. It is recommended to insert a couple using the external thread in order to get good alignment of the pulley teeth. 
+Alternatively, there is an STL file to 3D print the pulley in one single piece. We haven’t tried that option yet. </p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure12" src="../assembly_img/Fig12-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 12. Big pulley assembly (left) and threaded inserts (right)</em></td>
+</tr>
+</tbody>
+</table>
+<p>After laser cutting the circular platform, glue a small 5 mm Neodymium magnet as indicated in figure 14. One of the surfaces of the magnet has to be coincident with the bottom surface of the platform. The magnet is there to interact with the Hall effect sensor at the bottom and trigger a state change to high or low to complete the homing position. It is also essential to make the chamfer on the outside holes for the countersink screws.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure13" src="../assembly_img/Fig13-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 13. Magnet gluing and chamfers</em></td>
+</tr>
+</tbody>
+</table>
+<p>Insert eight M6 screws to attach the Circular platform with the big pulley using the threaded inserts thread.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure14" src="../assembly_img/Fig14-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 14. Circular platform and big pulley assembly</em></td>
+</tr>
+</tbody>
+</table>
+<p>Assemble the Base with the Platform 2 using 7 M6 screws.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure15" src="../assembly_img/Fig15-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 15. Base and Platform 2 assembly</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Gif2" src="../gif/Platform.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Platform assembly</em></td>
+</tr>
+</tbody>
+</table>
+<p>Assemble the Hall Effect sensor used for the homing sequence, using two M3 screws, two Hall effect spacers and the Hall Effect holder.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure16" src="../assembly_img/Fig16-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 16. Hall Effect sensor assembly</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure17" src="../assembly_img/Fig17-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 17. Hall effect sensor placement</em></td>
+</tr>
+</tbody>
+</table>
+<p>In order to assemble the circular platform, place the spacer in contact with the inner ring of the bearing, then place the circular platform previously assembled with the big pulley on the spacer and use the M5 screws also installed as in the first step of the bearing. After that you can use the Thorlabs PH_50 and the TR_50 to adjust the height of the rotary joint spacer until this one makes contact with the circular platform surface. Once it makes contact you can insert six M4 screws to secure it.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure18" src="../assembly_img/Fig18-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 18. Circular platform assembly</em></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Gif3" src="../gif/Big-pulley.gif" /></p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure19" src="../assembly_img/Fig19-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 19. Adjustment of the Rotary joint height</em></td>
+</tr>
+</tbody>
+</table>
+<p>The shaft of the Motor is 8 mm in diameter and the inner diameter of the small pulley (https://uk.rs-online.com/web/p/belt-pulleys/1465412/) is 6 mm. The inner diameter of the pulley has to be increased to 8 mm with a vertical drilling machine/milling machine (Figure 20). Add a second hole with 3.3 mm diameter (using a 3.3 mm drill bit) to add the screw that prevents the pulley to rotate around the motor shaft. Thread the hole using an M4 tap toolkit. For that step, the use of a vice is recommended to hold the pulley while drilling. In order to connect the encoder shaft with the pulley, the encoder attachment must be 3D printed and two extra 2.5 mm holes must be drilled at the top of the pulley. Then, an M3 thread must be made using the M3 tap tool. </p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure20" src="../assembly_img/Fig20-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 20. Small pulley</em></td>
+</tr>
+</tbody>
+</table>
+<p>The pulley can be assembled before or after attaching the motor with the platform 2.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure21" src="../assembly_img/Fig21-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 21. Metal small pulley modified</em></td>
+</tr>
+</tbody>
+</table>
+<p>The belt has to be enveloping the small pulley when you insert it on the motor shaft. You will feel a “High” tension when pulling the belt since it is rigid. </p>
+<p>!!! warning:
+    Remember to put the flat part of the motor shaft oriented in a comfortable position to make pressure with the pulley M4 screw afterwards.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure22" src="../assembly_img/Fig22-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 22. Small pulley with motor shaft assembly</em></td>
+</tr>
+</tbody>
+</table>
+<p>The big pulley is attached with the Circular platform with M6 screws and then attached with the crossed roller bearing using M5 screws.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure23" src="../assembly_img/Fig23-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 23. Assembly of the big pulley with the platform and both with the crossed roller bearing using M5 screws</em></td>
+</tr>
+</tbody>
+</table>
+<p>Three M3 screws are used to attach the Encoder holder with the encoder.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure24" src="../assembly_img/Fig24-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 24. Encoder holder and encoder assembly</em></td>
+</tr>
+</tbody>
+</table>
+<p>Once the belt cover part is cut with the laser, four brass M4 threaded inserts must be inserted on the holes, heating them with the soldering iron or just by applying pressure.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure25" src="../assembly_img/Fig25-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 25. M4 threaded inserts on the belt cover</em></td>
+</tr>
+</tbody>
+</table>
+<p>Now four M4 screws can be inserted from the top placing the spacers coincident with the holes.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure26" src="../assembly_img/Fig26-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 26. M4 threaded inserts on the belt cover</em></td>
+</tr>
+</tbody>
+</table>
+<p>The belt cover can now be installed using M6 screws, nuts and the cover spacers. After that, the encoder shaft needs to be put in contact with the M4 grub screw at the top of the pulley.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure27" src="../assembly_img/Fig27-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 27. Belt cover assembly</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Gif3" src="../gif/Small-pulley.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Small pulley assembly</em></td>
+</tr>
+</tbody>
+</table>
+<p>Two ball bearings are inserted on the belt tensor and one M6 screw is used to install the belt tensor in the guide. Use four washers to get a good fit on the inside and outside of the screw with the two sides of belt cover and Platform 2.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure28" src="../assembly_img/Fig28-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 28. Belt tensor assembly</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure29" src="../assembly_img/Fig29-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 29. Detail of the two ball bearings</em></td>
+</tr>
+</tbody>
+</table>
+<p>Now adjust the tension of the belt. After that check that the belt is not touching the bottom or the top surfaces.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure30" src="../assembly_img/Fig30-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 30. Space on both sides of the belt</em></td>
+</tr>
+</tbody>
+</table>
+<p>The sphere holder has to be attached with four M6 screws.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure31" src="../assembly_img/Fig31-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img alt="Figure32" src="../assembly_img/Fig32-Assembly-Instructions.PNG" /></td>
+</tr>
+<tr>
+<td align="center"><em>Figure 31-32. Sphere holder assembly</em></td>
+</tr>
+</tbody>
+</table>
+<p>All the components that go on the circular platform : Head fixation post, Pupil tracking camera, Reward delivery system and optical sensor holders, can be assembled as with the Stenmeyer DT240 version.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure33" src="../assembly_img/Fig33-Assembly-Instructions.PNG" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 37. Complete assembly</em></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../wiring/wiring/" class="btn btn-neutral float-right" title="Connections">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../components/" class="btn btn-neutral" title="Components"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../components/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../wiring/wiring/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Components - VestibularPlatform</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Components";
+    var mkdocs_page_input_path = "platform/components.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> VestibularPlatform</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Main platform</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Components</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#rotary-joint">Rotary joint</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#crossed-roller-bearing">Crossed roller bearing</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dc-motor-and-driver">DC motor and driver</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#belt-selection">Belt selection</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#the-timing-belt">The timing belt</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#the-small-pulley">The small pulley</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of materials</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#references">References</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Electrical setup and configuration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../wiring/wiring/">Connections</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../wiring/config/">Driver configuration</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Optical motion sensors, option 1, ADNS-2610</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sensors/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sensors/assembly/">Assembly</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sensors/characterization/">Characterization</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Optical motion sensors, option 2, ADNS-3050</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sensors_3050/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sensors_3050/assembly/">Assembly</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sensors_3050/characterization/">Characterization</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Optical motion sensors, option 3, PWM-3360</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sensors_3360/components/">Components</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Embedded screens</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../screens/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../screens/assembly/">Assembly</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../screens/VR/">Virtual Reality</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Head-holding system</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Headclamp</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Pupil Tracking system</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Characterization and validation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Characterization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/specification/">Specification</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Requirements</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">VestibularPlatform</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Main platform &raquo;</li>
+        
+      
+    
+    <li>Components</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="main-components">Main components</h1>
+<h2 id="rotary-joint">Rotary joint</h2>
+<p>The rotary joint enables electrical communications between the base and the rotating platform. It has a through-hole design for routing the compressed air tube. The selected model is the Senring UH1256-02-0610-06S, of the UH1256-02 Series <a href="#references">[1]</a>. It has two USB ports that can be used to connect e.g. cameras, and several power and data wires to connect different sensors and other accessories.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure1" src="../img/Fig1_Main-Components_resized.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 1. Senring UH1256-02-0610-06S Series</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="crossed-roller-bearing">Crossed roller bearing</h2>
+<p>The crossed roller bearing iprovides a strong joint between the static base and the rotation platform. A suitable model for the application is the BRS RU124X considering fitting the rotary joint (inner diameter &gt; 55mm). The bearing provides stong joint stability against axial and radial forces and torque, due to its best-in class axial runout (2-5 µm).</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure2" src="../img/Fig2_Main_Components_resized.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 2. SBRS RU124X Crossed roller bearing</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="dc-motor-and-driver">DC motor and driver</h2>
+<p>In order to get an approximation of the motor requirements we have estimated the moment of inertia around the vertical axis. For this approximation we have considered two main components: the circular platform and all the elements that are on the platform, and the inner ring of the crossed roller bearing. To simplify the approximation, the internal ring of the bearing has been considered as a stainless steel solid part. The negligible friction force of the bearing has not been taken into account.</p>
+<p>Both moments of inertia have been extracted using the mass properties of the Solidworks® CAD software.</p>
+<p><img alt="equation1" src="https://latex.codecogs.com/gif.download?I_%7Bz%5C%20elements%20%5C%20on%5C%20platform%7D%20%3D%20151799239.83%5C%20g%5C%3Amm%5E%7B2%7D%20%3D%200.1518%5C%20kg%5C%3Amm%5E%7B2%7D" /></p>
+<p><img alt="equation2" src="https://latex.codecogs.com/gif.download?I_%7Bz%5C%20bearing%20%5C%20inner%20%5C%20ring%7D%20%3D%2031011827.49%5C%20g%5C%3Amm%5E%7B2%7D%20%3D%200.0031%5C%20kg%5C%3Amm%5E%7B2%7D" /></p>
+<p>With this value we can make the approximation of the torque needed to accelerate the system using the Newton’s 2nd law of rotation :
+<img alt="equation3" src="https://latex.codecogs.com/gif.download?M%20%3D%20I.%5Calpha" />. </p>
+<p>After numerical simulation, we obtain a theoretical maximum acceleration, useful to choose the motor, described by the function :
+<img alt="equation4" src="https://latex.codecogs.com/gif.download?%5Ctau%20%3D%200.0026%20%5Calpha%20-9%5E%7B-17%7D" /></p>
+<p>With this relationship we can estimate the maximum torque needed for the motor and the theoretical maximum angular acceleration is 1100 °/s^2  with the 3 Nm motor option.</p>
+<p>A stepper motor was selected accordingly: Nema 23 Stepper Motor 3 Nm 4.2A with a DM542A driver.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure3" src="../img/Fig3-Main-Components_resized.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 3. Nema 23 stepper motor and DM542A stepper driver</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Nema 23 Stepper motor main features:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Property</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">steps/rev</td>
+<td align="center">200</td>
+</tr>
+<tr>
+<td align="center">L (mH)</td>
+<td align="center">3.2</td>
+</tr>
+<tr>
+<td align="center">I<sub>max</sub> (A)</td>
+<td align="center">4.2</td>
+</tr>
+<tr>
+<td align="center">V (V)</td>
+<td align="center">24</td>
+</tr>
+<tr>
+<td align="center">T (N.m)</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">P<sub>max</max> (W)</td>
+<td align="center">96</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>The current can be selected using the first four switches of the driver DIP switch:
+<img alt="Figure4" src="../img/Fig4-Main-Components.png" /></p>
+<p>The driver has a DIP switch to select the desired micro stepping mode:
+<img alt="Figure5" src="../img/Fig5-Main-Components.png" /></p>
+<h2 id="belt-selection">Belt selection</h2>
+<p>We have adjusted the number of teeth <img alt="zp" src="https://latex.codecogs.com/gif.download?z_p" /> of the big and the small pulley in order to get a gear ratio of 4:1 considering the minimum diameter of the big pulley as the outside diameter of the crossed roller bearing BRS RU124X. </p>
+<p><img alt="equation11" src="https://latex.codecogs.com/gif.download?d_p%20%3D%20%5Cfrac%7Bp%5C%3Az_p%7D%7B%5Cpi%7D" /></p>
+<p>The diameter of the commercial small pulley with <img alt="zp" src="https://latex.codecogs.com/gif.download?z_p" /> = 36 teeth is 34.38. Once the big and small pulley diameters (<em>D</em> and <em>d</em>) have been defined, the distance between centers (<em>C</em>) is alculated to get the desired commercial length <em>L</em> :</p>
+<p><img alt="equation12" src="https://latex.codecogs.com/gif.download?L%20%3D%202C%20+%20%5Cfrac%7B%5Cpi%7D%7B2%7D%28D+d%29+%5Cfrac%7B%28D-d%29%5E2%7D%7B4C%7D" /></p>
+<p>The number of teeth obtained for the big pulley is 216, and the distance between centers 216 mm. That result determined the choice of the belt for our device.</p>
+<h2 id="the-timing-belt">The timing belt</h2>
+<p>The size of the belt was calculated considering the outside diameter of the Crossed roller bearing (OD &gt; 165 mm) and the desired gear ratio of 4 which provides the stage of a maximum theoretical value of 12 Nm. In order to calculate the belt parameters, first we consider the maximum width of the belt for our space constraints, which is 20 mm maximum. According with the distance between centers and the pulley diameters, the length of belt needed is 927 mm and the chosen belt width is 15 mm. </p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="figure6" src="../img/Fig6-Main-Components_resized.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 6. Timing belt</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-small-pulley">The small pulley</h2>
+<p>The pulley that is driven by the Nema 23 stepper motor is a 36 teeth HTD3 metal pulley provided by RS Components.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="figure7" src="../img/Fig7-Main-Components_resized.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 7. Small pulley</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="bill-of-materials">Bill of materials</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Quantity</th>
+<th>Supplier</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base</td>
+<td>1</td>
+<td>Laser cut part</td>
+<td><a href="../files/STEP/Base.STEP">STEP file</a></td>
+</tr>
+<tr>
+<td>Platform 2 (Rev1)</td>
+<td>1</td>
+<td>-</td>
+<td><a href="../files/STEP/Platform%202%28Rev1%29.stp">STEP file</a></td>
+</tr>
+<tr>
+<td>Belt cover (Rev1)</td>
+<td>1</td>
+<td>-</td>
+<td><a href="../files/STEP/Belt%20cover%28Rev1%29.stp">STEP file</a></td>
+</tr>
+<tr>
+<td>Circular platform</td>
+<td>1</td>
+<td>-</td>
+<td><a href="../files/STEP/Circular%20rotary%20stage.stp">STEP file</a></td>
+</tr>
+<tr>
+<td>Spacer</td>
+<td>1</td>
+<td>-</td>
+<td><a href="../files/STEP/Spacer.STEP">STEP file</a></td>
+</tr>
+<tr>
+<td>Encoder holder</td>
+<td>1</td>
+<td>-</td>
+<td><a href="../files/STEP/Encoder%20holder.STEP">STEP file</a></td>
+</tr>
+<tr>
+<td>Small pulley (Rev1)</td>
+<td>1</td>
+<td>RS   Components</td>
+<td>https://uk.rs-online.com/web/p/belt-pulleys/1465412/</td>
+</tr>
+<tr>
+<td>Big pulley (Rev1)</td>
+<td>1</td>
+<td>-</td>
+<td><a href="../files/STEP/Big%20pulley%20%28Rev1%29.stp">STEP file</a>, <a href="../files/STL/Big%20pulley%20%28Rev1%29.stl">STL file</a></td>
+</tr>
+<tr>
+<td>Belt</td>
+<td>1</td>
+<td>Ebay</td>
+<td>https://www.ebay.co.uk/itm/324243196114?hash=item4b7e6688d2:g:YU8AAOSwIW1fH-nz</td>
+</tr>
+<tr>
+<td>Encoder Atachment</td>
+<td>1</td>
+<td>-</td>
+<td><a href="../files/STEP/Encoder%20attachment.stp">STEP file</a>, <a href="../files/STL/Encoder%20attachment.stl">STL file</a></td>
+</tr>
+<tr>
+<td>Belt tensor</td>
+<td>1</td>
+<td>3D printed</td>
+<td><a href="../files/STEP/Belt%20tensor.STEP">STEP file</a></td>
+</tr>
+<tr>
+<td>Encoder spacer</td>
+<td>4</td>
+<td>Laser cut part/3D printed</td>
+<td><a href="../files/STEP/Encoder%20spacer.STEP">STEP file</a></td>
+</tr>
+<tr>
+<td>Cover spacer</td>
+<td>6</td>
+<td>3D printed</td>
+<td><a href="../files/STEP/Cover%20spacer.STEP">STEP file</a></td>
+</tr>
+<tr>
+<td>Tube guide</td>
+<td>1</td>
+<td>3D printed</td>
+<td><a href="../files/STEP/Tube%20guide.STEP">STEP file</a></td>
+</tr>
+<tr>
+<td>Rotary joint spacer</td>
+<td>1</td>
+<td>3D printed</td>
+<td><a href="../files/STEP/Rotary%20joint%20spacer.STEP">STEP file</a></td>
+</tr>
+<tr>
+<td>Ball Holder</td>
+<td>1</td>
+<td>3D printed</td>
+<td><a href="../files/STL/Ball%20Holder.STL">STL file</a></td>
+</tr>
+<tr>
+<td>CF175</td>
+<td>4</td>
+<td>Thorlabs</td>
+<td>https://www.thorlabs.com/thorproduct.cfm?partnumber=CF175#ad-image-0</td>
+</tr>
+<tr>
+<td>RS05P Pedestal posts</td>
+<td>4</td>
+<td>Thorlabs</td>
+<td>https://www.thorlabs.com/thorproduct.cfm?partnumber=RS05P/M</td>
+</tr>
+<tr>
+<td>RS150</td>
+<td>7</td>
+<td>Thorlabs</td>
+<td>https://www.thorlabs.com/thorproduct.cfm?partnumber=RS150/M</td>
+</tr>
+<tr>
+<td>TR_50M</td>
+<td></td>
+<td>Thorlabs</td>
+<td>https://www.thorlabs.com/thorproduct.cfm?partnumber=TR50/M</td>
+</tr>
+<tr>
+<td>PH_50</td>
+<td>2</td>
+<td>Thorlabs</td>
+<td>https://www.thorlabs.com/thorproduct.cfm?partnumber=PH50/M#ad-image-0</td>
+</tr>
+<tr>
+<td>M6 washers</td>
+<td>2</td>
+<td></td>
+<td>https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=248</td>
+</tr>
+<tr>
+<td>M6 screws</td>
+<td>44</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>M5 screws</td>
+<td>24</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>M4 screws</td>
+<td>11</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>M3 screws</td>
+<td>7</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>M6 nuts</td>
+<td>9</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>M5 nuts</td>
+<td>14</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>BRS RU124X bearing</td>
+<td>1</td>
+<td>BRS</td>
+<td>http://www.rigbrsbearing.com/product/ru124x-cross-roller-ring/</td>
+</tr>
+<tr>
+<td>Rotary Joint</td>
+<td>1</td>
+<td>Senring</td>
+<td>https://www.senring.com/usb-conductive-slip-ring/dual-Channels/uh1256-02.html</td>
+</tr>
+<tr>
+<td>Encoder</td>
+<td>1</td>
+<td>Amazon</td>
+<td>https://www.amazon.co.uk/Wisamic-Incremental-Encoder-Dc5-24v-Voltage/dp/B015GYY7XU/ref=sr_1_8?dchild=1&amp;keywords=rotary+encoder&amp;qid=1587721002&amp;sr=8-8</td>
+</tr>
+<tr>
+<td>Hall efect sensor</td>
+<td>1</td>
+<td>Amazon</td>
+<td>https://www.amazon.co.uk/gp/product/B06XHG9CYN/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&amp;psc=1</td>
+</tr>
+<tr>
+<td>Magnet</td>
+<td>1</td>
+<td>RS   Components</td>
+<td>792-4559</td>
+</tr>
+<tr>
+<td>Nema 23 Stepper motor</td>
+<td>1</td>
+<td>Ebay</td>
+<td>https://www.ebay.co.uk/itm/Free-Ship-Nema-23-Stepper-Motor-435oz-in-4-2A-Driver-Controller-DM542A/273805042516?ssPageName=STRK%3AMEBIDX%3AIT&amp;_trksid=p2060353.m2749.l2649</td>
+</tr>
+<tr>
+<td>Motor driver</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>M6 threadd inserts</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>M4 threaded inserts</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Bearings</td>
+<td>2</td>
+<td>RS   Components</td>
+<td>619-0014</td>
+</tr>
+<tr>
+<td>Incremental encoder</td>
+<td>1</td>
+<td>Amazon</td>
+<td>https://www.amazon.co.uk/Wisamic-Incremental-Encoder-Dc5-24v-Voltage/dp/B015GYY7XU/ref=asc_df_B015GYY7XU/?tag=googshopuk-21&amp;linkCode=df0&amp;hvadid=231995364607&amp;hvpos=&amp;hvnetw=g&amp;hvrand=2855211729431962431&amp;hvpone=&amp;hvptwo=&amp;hvqmt=&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=9045997&amp;hvtargid=pla-487280118197&amp;psc=1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="references">References</h2>
+<p>[1] <a href="https://www.senring.com/usb-conductive-slip-ring/dual-Channels/uh1256-02.html">https://www.senring.com/usb-conductive-slip-ring/dual-Channels/uh1256-02.html</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../assembly/" class="btn btn-neutral float-right" title="Assembly">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../.." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../assembly/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
