@@ -95,6 +95,22 @@
                     <li class="toctree-l1"><a class="reference internal" href="sensors_3360/components/">Components</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Instrument ring and head-holder</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="holders/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="holders/headclamp/">Head-plate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="holders/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Pupil Camera</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="pupil/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="pupil/assembly/">Assembly</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Embedded screens</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="screens/components/">Components</a>
@@ -104,34 +120,11 @@
                     <li class="toctree-l1"><a class="reference internal" href="screens/VR/">Virtual Reality</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Head-holding system</span></p>
+                <p class="caption"><span class="caption-text">Characterization and software</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="holders/components/">Components</a>
+                    <li class="toctree-l1"><a class="reference internal" href="characterization/characterization/">Platform characterization</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="holders/headclamp/">Headclamp</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="holders/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Pupil Tracking system</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="pupil/components/">Components</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="pupil/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Characterization and validation</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="characterization/characterization/">Characterization</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="characterization/specification/">Specification</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="characterization/requirements/">Requirements</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="troubleshooting/troubleshooting/">Troubleshooting</a>
+                    <li class="toctree-l1"><a class="reference internal" href="characterization/requirements/">Software</a>
                     </li>
                 </ul>
       </div>
@@ -167,10 +160,11 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="vestibular-platform-for-head-fixed-mice">Vestibular platform for head-fixed mice</h1>
+                <h1 id="rpm-a-rotation-platform-for-head-fixed-mice">RPM - a Rotation Platform for head-fixed Mice</h1>
 <h2 id="overview">Overview</h2>
 <p>This device provides vestibular stimulation for head-fixed experiments in mice. It can be combined with different physiological and behavioural recording modalities. It follows a modular, low-cost and open-source model.
-This documentation provides the assembly and operation guide for users with some experience in rapid manufacturing, electronics and development boards/microcontrollers (such as Arduino).</p>
+This documentation provides the assembly and operation guide for users with some experience in rapid manufacturing, electronics and development boards/microcontrollers, such as Arduino.</p>
+<p>In the accompanying paper <a href="">(link_goes_here)</a>, we show use cases for pupil tracking and recording head-direction cell activity during rotation. </p>
 <table>
 <thead>
 <tr>
@@ -179,7 +173,7 @@ This documentation provides the assembly and operation guide for users with some
 </thead>
 <tbody>
 <tr>
-<td align="center"><em>Figure 1. Global view of the setup and main components</em></td>
+<td align="center"><em>Figure 1. Main components of the rotation platform</em></td>
 </tr>
 </tbody>
 </table>
@@ -191,7 +185,7 @@ This documentation provides the assembly and operation guide for users with some
 <li>modular design, modules can be added depending on experimental needs</li>
 </ul>
 <h2 id="main-components">Main components</h2>
-<p>The main components of the stage are labeled in the figure above. The rotary platform is actuated by a stepper motor using a timing belt. An incremental encoder is coupled with the motor shaft to measure the angular position and a Hall effect sensor is used for homing purposes. Compressed air is used to keep a polystyrene sphere floating without friction inside the sphere holder. The crossed roller bearing holds the rotating and non-rotating parts together. The rotary joint enables multiple electric connections between the rotary platform and the base. The device is intended to be used for behavioural experiments combined with extracellular recording and optogenetics. There are two operating modes: closed-loop and open-loop. In closed-loop, the rotation of the sphere on the vertical (yaw) axis is measured using an optical sensor and is used to generate a motor rotation of an adjustable magnitude in the opposite direction. In open-loop mode, motor rotation is independent of the animal’s movement and can be controlled by the experimenter.</p>
+<p>The main components of the stage are labelled in the figure above. The rotary platform is actuated by a stepper motor using a timing belt. An incremental encoder is coupled with the motor shaft to measure the angular position, while a Hall effect sensor is used for homing purposes. Compressed air keeps a polystyrene sphere floating without friction inside the sphere holder. The crossed roller bearing holds the rotating and non-rotating parts together. The rotary joint enables multiple electric connections between the rotary platform and the base. The device is intended for behavioural experiments combined with extracellular recording and optogenetics. There are two operating modes: closed-loop and open-loop. In closed-loop mode, the sphere's rotation on the vertical (yaw) axis is measured using an optical sensor and is used to generate a motor rotation of an adjustable magnitude in the opposite direction. In open-loop mode, motor rotation is independent of the animal’s movement and can be controlled by the experimenter.</p>
               
             </div>
           </div>
@@ -246,5 +240,5 @@ This documentation provides the assembly and operation guide for users with some
 
 <!--
 MkDocs version : 1.2.3
-Build Date UTC : 2022-03-27 14:37:35.848155+00:00
+Build Date UTC : 2022-10-12 14:51:22.063128+00:00
 -->

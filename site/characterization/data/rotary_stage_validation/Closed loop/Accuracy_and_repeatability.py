@@ -25,7 +25,7 @@ std = np.array([[0.011, 0.804, 2.707, 3.559, 4.883], [0.019, 0.073, 0.741, 2.844
 
 plt.xlabel('Angular velocity (deg/s)')
 plt.ylabel('Angular acceleration (deg/s^2)')
-plt.contourf(W, A, mean, 100, cmap='RdGy')
+plt.contourf(W, A, mean, 100, cmap='RdGy_r')
 #plt.clim(0, 1)
 plt.colorbar();
 plt.title('Average of absolute position deviation')
@@ -36,7 +36,7 @@ plt.show()
 
 plt.xlabel('Angular velocity (deg/s)')
 plt.ylabel('Angular acceleration (deg/s^2)')
-stdcntr = plt.contourf(W, A, std, 100, cmap='RdGy')
+stdcntr = plt.contourf(W, A, std, 100, cmap='RdGy_r')
 
 #plt.clim(0, 1)
 plt.colorbar()

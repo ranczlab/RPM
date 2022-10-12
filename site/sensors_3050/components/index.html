@@ -79,7 +79,7 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#sensors">Sensors</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials-for-each-sensor">Bill of materials (for each sensor)</a>
+    <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials-per-sensor">Bill of materials (per sensor)</a>
     </li>
     </ul>
                     </li>
@@ -93,6 +93,22 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../sensors_3360/components/">Components</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Instrument ring and head-holder</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Head-plate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Pupil Camera</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Embedded screens</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/components/">Components</a>
@@ -102,34 +118,11 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/VR/">Virtual Reality</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Head-holding system</span></p>
+                <p class="caption"><span class="caption-text">Characterization and software</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Platform characterization</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Headclamp</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Pupil Tracking system</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Characterization and validation</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Characterization</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/specification/">Specification</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Requirements</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">Troubleshooting</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Software</a>
                     </li>
                 </ul>
       </div>
@@ -171,7 +164,7 @@
               
                 <h1 id="optical-motion-sensors-option-2-adns-3050">Optical motion sensors - option 2, ADNS-3050</h1>
 <h2 id="sensors">Sensors</h2>
-<p>Another option to measure the position of the sphere is to use two PCB boards based on the Avago Technologies ADNS-3050 optical flow sensor [1]. The sensor were extracted from the Cougar Minos X2 gaming computer mouse [2]. This sensor has high motion detection under speeds of 152.4 cm/s and can deal with accelerations up to 20G. It has selectable resolutions up to 2000 cpi (we have used the default configuration of 1000 cpi). The register outputs the SQUAL value, which is used for the calibration process.</p>
+<p>Another option to measure the sphere's position is to use two PCB boards based on the Avago Technologies ADNS-3050 optical flow sensor. The sensor was extracted from the Cougar Minos X2 gaming computer mouse. This sensor has high motion detection under speeds of 152.4 cm/s and can deal with accelerations up to 20G. It has selectable resolutions up to 2000 cpi (we have used the default configuration of 1000 cpi). Furthermore, the register outputs the SQUAL value, which is used for the calibration and adjustment process.</p>
 <table>
 <thead>
 <tr>
@@ -184,7 +177,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="bill-of-materials-for-each-sensor">Bill of materials (for each sensor)</h2>
+<h2 id="bill-of-materials-per-sensor">Bill of materials (per sensor)</h2>
 <table>
 <thead>
 <tr>
@@ -199,10 +192,10 @@
 <td>Optical mouse</td>
 <td>1</td>
 <td>-</td>
-<td><a href="https://cougargaming.com/products/mice/minos_x2/">https://www.ebay.co.uk/itm/HP-PS2-Optical-Mouse-for-Desktops-Laptops-417966-001/272643457275?ssPageName=STRK%3AMEBIDX%3AIT&amp;_trksid=p2060353.m2749.l2649 </a></td>
+<td><a href="https://cougargaming.com/products/mice/minos_x2/">link</a></td>
 </tr>
 <tr>
-<td>PCB Holder</td>
+<td>PCB Holder 1</td>
 <td>1</td>
 <td>3D printed part</td>
 <td><a href="../files/STEP/PCB%20holder.STEP">STEP file</a>, <a href="../files/STL/PCB%20holder.STL">STL file</a></td>
@@ -222,9 +215,8 @@
 </tbody>
 </table>
 <p>The rest of the components are the same as described in the ADNS 2610 assembly.</p>
-<h1 id="references">References</h1>
-<p>[1] <a href="https://media.digikey.com/pdf/data%20sheets/avago%20pdfs/adns-3050.pdf">https://media.digikey.com/pdf/data%20sheets/avago%20pdfs/adns-3050.pdf</a></p>
-<p>[2] <a href="https://cougargaming.com/products/mice/minos_x2/">https://cougargaming.com/products/mice/minos_x2/</a></p>
+<h1 id="datasheets">Datasheets</h1>
+<p>[1] <a href="../datasheets/adns-3050.pdf">ADNS-3050 datasheet</a></p>
               
             </div>
           </div>

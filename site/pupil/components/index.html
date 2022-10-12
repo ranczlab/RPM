@@ -87,25 +87,16 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../sensors_3360/components/">Components</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Embedded screens</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../screens/components/">Components</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../screens/assembly/">Assembly</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../screens/VR/">Virtual Reality</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Head-holding system</span></p>
+                <p class="caption"><span class="caption-text">Instrument ring and head-holder</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Headclamp</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Head-plate</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Pupil Tracking system</span></p>
+                <p class="caption"><span class="caption-text">Pupil Camera</span></p>
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Components</a>
     <ul class="current">
@@ -116,18 +107,20 @@
                     <li class="toctree-l1"><a class="reference internal" href="../assembly/">Assembly</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Characterization and validation</span></p>
+                <p class="caption"><span class="caption-text">Embedded screens</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Characterization</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../screens/components/">Components</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/specification/">Specification</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../screens/assembly/">Assembly</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Requirements</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../screens/VR/">Virtual Reality</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
+                <p class="caption"><span class="caption-text">Characterization and software</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">Troubleshooting</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Platform characterization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Software</a>
                     </li>
                 </ul>
       </div>
@@ -151,7 +144,7 @@
     
       
         
-          <li>Pupil Tracking system &raquo;</li>
+          <li>Pupil Camera &raquo;</li>
         
       
     
@@ -167,9 +160,9 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="pupil-tracking-camera-mirror-complex">Pupil tracking camera-mirror complex</h1>
-<p>Additionally, it is possible to add a camera on the head holder. The ELP webcam camera 1080P 30fps was chosen for its small footprint and light weight, and used with a Thorlabs FEL0750 - Ø1" Long pass Filter, Cut-Off Wavelength: 750 nm, mounted on a CP35/M - 30 mm Cage Plate with a SM1L03 - SM1 Lens Tube.</p>
-<p>The image of the animal’s pupil is reflected from the FM02R - 25 mm x 36 mm Red Hot Mirror, AOI: 45°. The mirror can be adjusted with Thorlabs Posts elements and the camera can be rotated and translated for adequate positioning.</p>
+                <h1 id="camera-mirror-complex-for-pupil-tracking">Camera-mirror complex for pupil tracking</h1>
+<p>A camera can be added to the ring-shaped instrument platform to record e.g. eye or facial movements. We chose a web camera with a small footprint, low weight and USB connectivity through the rotary joint. It lacks an IR filter. We used an IR LED for illumination and a Thorlabs FEL0750 - Ø1" long pass filter mounted on a CP35/M - 30 mm cage Plate using an SM1L03 lens tube. </p>
+<p>The image of the animal is reflected on an FM02R red hot mirror ((25 mm x 36 mm) with an incidence angle of 45°. The mirror position can be adjusted with Thorlabs post elements, and the camera can be rotated and translated for adequate positioning.</p>
 <table>
 <thead>
 <tr>
@@ -178,7 +171,7 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><em>Figure 1. Camera with mirror</em></td>
+<td align="center"><em>Figure 1. Camera with hot mirror</em></td>
 </tr>
 </tbody>
 </table>
@@ -196,25 +189,25 @@
 <tr>
 <td>Mirror holder</td>
 <td>1</td>
-<td>3D   printed part</td>
+<td>3D   printed</td>
 <td><a href="../files/STEP/Mirror%20holder.STEP">STP file</a>, <a href="../files/STL/Mirror%20holder.STL">STL file</a></td>
 </tr>
 <tr>
 <td>Camera holder</td>
 <td>1</td>
-<td>3D   printed part</td>
+<td>3D   printed</td>
 <td><a href="../files/STEP/Camera%20holder.STEP">STP file</a>, <a href="../files/STL/Camera%20holder.STL">STL file</a></td>
 </tr>
 <tr>
 <td>Filter holder</td>
 <td>1</td>
-<td>3D   printed part</td>
+<td>3D   printed</td>
 <td><a href="../files/STEP/Filter%20holder.STEP">STP file</a>, <a href="../files/STL/Filter%20holder.STL">STL file</a></td>
 </tr>
 <tr>
 <td>Filter holder cover</td>
 <td>1</td>
-<td>3D   printed part</td>
+<td>3D   printed</td>
 <td><a href="../files/STEP/Filter%20holder%20cover.STEP">STP file</a>, <a href="../files/STL/Filter%20holder%20cover.STL">STL file</a></td>
 </tr>
 <tr>
@@ -251,31 +244,31 @@
 <td>FEL0750 - Ø1" Long pass Filter</td>
 <td>1</td>
 <td>Thorlabs</td>
-<td>https://www.thorlabs.de/thorproduct.cfm?partnumber=FEL0750</td>
+<td><a href="https://www.thorlabs.de/thorproduct.cfm?partnumber=FEL0750">link</a></td>
 </tr>
 <tr>
 <td>CP35/M - 30 mm Cage Plate</td>
 <td>1</td>
 <td>Thorlabs</td>
-<td>https://www.thorlabs.com/thorproduct.cfm?partnumber=CP35/M</td>
+<td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CP35/M">link</a></td>
 </tr>
 <tr>
 <td>SM1L03 - SM1 Lens Tube</td>
 <td>1</td>
 <td>Thorlabs</td>
-<td>https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1L03</td>
+<td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1L03">link</a></td>
 </tr>
 <tr>
 <td>FM02R - 25 mm x 36 mm Red Hot Mirror</td>
 <td>1</td>
 <td>Thorlabs</td>
-<td>https://www.thorlabs.com/thorproduct.cfm?partnumber=FM02R</td>
+<td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=FM02R">link</a></td>
 </tr>
 <tr>
-<td>ELP webcam camera 1080P 30fp</td>
+<td>ELP webcam</td>
 <td>1</td>
 <td>Amazon</td>
-<td>https://www.amazon.co.uk/gp/product/B015PCAVZG/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1</td>
+<td><a href="https://www.amazon.co.uk/gp/product/B015PCAVZG">link</a></td>
 </tr>
 </tbody>
 </table>

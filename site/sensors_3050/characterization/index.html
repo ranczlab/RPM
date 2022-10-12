@@ -89,6 +89,22 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../sensors_3360/components/">Components</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Instrument ring and head-holder</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Head-plate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Pupil Camera</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Embedded screens</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/components/">Components</a>
@@ -98,34 +114,11 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/VR/">Virtual Reality</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Head-holding system</span></p>
+                <p class="caption"><span class="caption-text">Characterization and software</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Platform characterization</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Headclamp</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Pupil Tracking system</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Characterization and validation</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Characterization</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/specification/">Specification</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Requirements</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">Troubleshooting</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Software</a>
                     </li>
                 </ul>
       </div>
@@ -166,9 +159,8 @@
             <div class="section">
               
                 <h1 id="characterization">Characterization</h1>
-<p>Before calibration, the position of the sensor needs to be adjusted, first using the vertical micrometer to make the optical flow sensor coincident the equator of the sphere with the optical flow sensor.
-Then the horizontal position can be adjusted using the horizontal micrometer until we reach a SQUAL value of approximately 50.
-Several recordings of 5 seconds at 1000 Hz are performed to characterize the perimeter measured by the sensor and establish the relationship between the actual and measured perimeter. The recordings have been divided by rotating the sphere around the yaw and roll axes (Figure 1).</p>
+<p>Before calibration, the position of the sensor must be adjusted to align with the sphere's equator vertically. Then the horizontal position can be adjusted until a SQUAL value of approximately 50 is achieved.
+Several recordings of 5 seconds at 1000 Hz were performed to characterize the perimeter measured by the sensor and establish the relationship between the actual and measured perimeter. Two sensors were used, and separate recordings were made rotating the sphere around the yaw and roll axes (Figure 1).</p>
 <table>
 <thead>
 <tr>
@@ -189,7 +181,7 @@ Several recordings of 5 seconds at 1000 Hz are performed to characterize the per
 </thead>
 <tbody>
 <tr>
-<td align="center"><em>Figure 2. Distribution of the SQUAL value on each axis</em></td>
+<td align="center"><em>Figure 2. Distribution of the SQUAL values on each axis</em></td>
 </tr>
 </tbody>
 </table>
@@ -206,7 +198,7 @@ Several recordings of 5 seconds at 1000 Hz are performed to characterize the per
 </tr>
 </tbody>
 </table>
-<p>The calibration was performed by repeating several measurements of one revolution for the roll and yaw axes (N=6 and N=5, respectively). For each recording, the sphere has been rotated by one revolution using an external mark. </p>
+<p>The calibration was performed by repeating several measurements of one revolution for the roll and yaw axes (n = 6 and n = 5, respectively). For each recording, the sphere has been rotated by hand for one revolution using an external mark. </p>
 <table>
 <thead>
 <tr>
@@ -219,7 +211,7 @@ Several recordings of 5 seconds at 1000 Hz are performed to characterize the per
 </tr>
 </tbody>
 </table>
-<p>As can be observed in Figure 4, for both axes the recordings converge towards a final value. The conversion factor between mouse internal units and cm is the average of this absolute final value for both axes (N=11). The average final value is 21,966 for the roll axis and 20,109 mouse internal units for the yaw axis, giving a final average of 21,038 mouse internal units for a perimeter of 61.89 cm, hence a conversion factor of 339.92 mouse internal units per cm.</p>
+<p>As shown in Figure 4, for both axes the recordings converge towards a final value. The conversion factor between mouse internal units and sphere displacement is the average of this absolute final value for both axes (n = 11). The average was 21,966 for the roll axis and 20,109 mouse internal units for the yaw axis, giving a final average of 21,038 mouse internal units for a perimeter of 61.89 cm, hence a conversion factor of 339.92 mouse internal units per cm.</p>
               
             </div>
           </div>

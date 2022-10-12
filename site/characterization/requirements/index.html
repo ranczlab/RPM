@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Requirements - VestibularPlatform</title>
+  <title>Software - VestibularPlatform</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Requirements";
+    var mkdocs_page_name = "Software";
     var mkdocs_page_input_path = "characterization/requirements.md";
     var mkdocs_page_url = null;
   </script>
@@ -87,6 +87,22 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../sensors_3360/components/">Components</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Instrument ring and head-holder</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Head-plate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Pupil Camera</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Embedded screens</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/components/">Components</a>
@@ -96,46 +112,33 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/VR/">Virtual Reality</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Head-holding system</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Headclamp</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Pupil Tracking system</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Characterization and validation</span></p>
+                <p class="caption"><span class="caption-text">Characterization and software</span></p>
                 <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../characterization/">Characterization</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../characterization/">Platform characterization</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../specification/">Specification</a>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Requirements</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Software</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#software-packages">Software packages</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#libraries">Libraries</a>
+    <li class="toctree-l2"><a class="reference internal" href="#required-libraries">Required Libraries</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#basic">Basic</a>
+    <li class="toctree-l3"><a class="reference internal" href="#libraries-for-alternative-optical-sensors">Libraries for alternative optical sensors</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#futures-implementations">Futures implementations</a>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#arduino-code-examples">Arduino code examples</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#closed_loopino">Closed_loop.ino</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#open_loopino">Open_loop.ino</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#open_loop_sdino">Open_loop_SD.ino</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#open_loop_moveasyncino">Open_loop_moveAsync.ino</a>
     </li>
         </ul>
     </li>
     </ul>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">Troubleshooting</a>
                     </li>
                 </ul>
       </div>
@@ -159,11 +162,11 @@
     
       
         
-          <li>Characterization and validation &raquo;</li>
+          <li>Characterization and software &raquo;</li>
         
       
     
-    <li>Requirements</li>
+    <li>Software</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -178,31 +181,32 @@
                 <h1 id="required-libraries-and-software-packages">Required libraries and software packages</h1>
 <h2 id="software-packages">Software packages</h2>
 <ul>
-<li>Arduino IDE: https://www.arduino.cc/en/software </li>
-<li>Teensyduino: https://www.pjrc.com/teensy/teensyduino.html </li>
+<li><a href="https://www.arduino.cc/en/software">Arduino IDE</a> </li>
+<li><a href="https://www.pjrc.com/teensy/teensyduino.html">Teensyduino</a> </li>
 </ul>
-<h2 id="libraries"><a href="../Arduino/libraries.zip">Libraries</a></h2>
-<h3 id="basic">Basic</h3>
+<h2 id="required-libraries">Required Libraries</h2>
 <ul>
-<li>Optical sensors ADNS 2160: https://github.com/zapmaker/OptiMouse </li>
-<li>Stepper motor control: https://luni64.github.io/TeensyStep/ </li>
-<li>Encoder: https://github.com/PaulStoffregen/Encoder </li>
+<li><a href="../Arduino/libraries.zip">Arduino</a></li>
+<li><a href="https://github.com/zapmaker/OptiMouse">ADNS 2160 optical sensor</a> </li>
+<li><a href="https://luni64.github.io/TeensyStep/">Stepper motor control</a> </li>
+<li><a href="https://github.com/PaulStoffregen/Encoder">Encoder</a> </li>
 </ul>
-<h3 id="futures-implementations">Futures implementations</h3>
-<p>These are Optical motion sensor options with higher capabilities than the ADNS 2160. All of them use the SPI bus.
--   Optical sensors ADNS 3500: https://github.com/Tom101222/Adns-3050-Optical-Sensor
--   Optical sensors PWM3360: https://github.com/mrjohnk/PMW3360DM-T2QU 
--   Optical sensors ADNS 9800: https://github.com/mrjohnk/ADNS-9800 </p>
-<h1 id="basic-arduino-code-description">Basic Arduino code description</h1>
-<p>The different Arduino sketches are available on: https://github.com/atranvan/vestibular_setup/tree/Files/Arduino%20code</p>
-<h2 id="closed_loopino"><a href="../Arduino/Closed_loop.zip">Closed_loop.ino</a></h2>
-<p>The closed loop code uses the measured angle increment as a setpoint for the proportional control. The animal can control the rotation of the platform.</p>
-<h2 id="open_loopino"><a href="../Arduino/Open_loop.zip">Open_loop.ino</a></h2>
-<p>The Open loop example uses two variables introduced by the user (eg. 0-360 degres) as a setpoints to switch every certain interval and therefore to swing from one to the other.</p>
-<h2 id="open_loop_sdino"><a href="../Arduino/Open_loop_SD.zip">Open_loop_SD.ino</a></h2>
-<p>This example is like the open loop example but saving the different variables on the SD card on the Teensy 3.5 SD card slot. That program was used to record accuracy and repeatability data of the stage.</p>
-<h2 id="open_loop_moveasyncino"><a href="../Arduino/Open_loop_moveAsync.zip">Open_loop_moveAsync.ino</a></h2>
-<p>This example is like the Open_loop_SD.ino but instead of using the proportional control it only bases its rotation movement on the teensystep method moveAsync() which is a non-blocking trapezoidal profile movement.</p>
+<h3 id="libraries-for-alternative-optical-sensors">Libraries for alternative optical sensors</h3>
+<p>These are Optical motion sensor options with higher capabilities than the ADNS 2160. All of them use the SPI bus.</p>
+<ul>
+<li><a href="https://github.com/Tom101222/Adns-3050-Optical-Sensor">ADNS 3500</a></li>
+<li><a href="https://github.com/mrjohnk/PMW3360DM-T2QU">PWM3360</a> </li>
+<li><a href="https://github.com/mrjohnk/ADNS-9800">ADNS 9800</a> </li>
+</ul>
+<h2 id="arduino-code-examples">Arduino code examples</h2>
+<h4 id="closed_loopino"><a href="../Arduino/Closed_loop.zip">Closed_loop.ino</a></h4>
+<p>The closed loop example uses the optically measured angle increment as a setpoint for the proportional motor control. The animal controls the rotation of the platform.</p>
+<h4 id="open_loopino"><a href="../Arduino/Open_loop.zip">Open_loop.ino</a></h4>
+<p>The Open loop example uses two user-defined variables (eg. 0-360 degrees) as setpoints to oscillate between at a user-defined interval.</p>
+<h4 id="open_loop_sdino"><a href="../Arduino/Open_loop_SD.zip">Open_loop_SD.ino</a></h4>
+<p>Like the open loop example, but saving the different variables on the SD card on the Teensy 3.5 microcontroller. This program was used to record the accuracy and repeatability measurements.</p>
+<h4 id="open_loop_moveasyncino"><a href="../Arduino/Open_loop_moveAsync.zip">Open_loop_moveAsync.ino</a></h4>
+<p>Like Open_loop_SD.ino, but instead of using the proportional control, rotation movement is controlled by the teensystep moveAsync() method, using a non-blocking trapezoidal profile.</p>
               
             </div>
           </div>
@@ -210,10 +214,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../troubleshooting/troubleshooting/" class="btn btn-neutral float-right" title="Troubleshooting">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../specification/" class="btn btn-neutral" title="Specification"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../characterization/" class="btn btn-neutral" title="Platform characterization"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -239,10 +241,8 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../specification/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../characterization/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../../troubleshooting/troubleshooting/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

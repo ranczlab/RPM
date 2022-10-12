@@ -89,6 +89,22 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../sensors_3360/components/">Components</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Instrument ring and head-holder</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Head-plate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Pupil Camera</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Embedded screens</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/components/">Components</a>
@@ -98,34 +114,11 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/VR/">Virtual Reality</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Head-holding system</span></p>
+                <p class="caption"><span class="caption-text">Characterization and software</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Platform characterization</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Headclamp</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Pupil Tracking system</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Characterization and validation</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Characterization</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/specification/">Specification</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Requirements</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">Troubleshooting</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Software</a>
                     </li>
                 </ul>
       </div>
@@ -166,7 +159,7 @@
             <div class="section">
               
                 <h1 id="assembly-instructions">Assembly instructions</h1>
-<p>In order to use the mice sensors, the PCB and the lens must be removed from the optical mouse and the VDD, GND, MISO, MOSI, NCS and SCLK must be soldered with wires to be connected to the microcontroller with the microcontroller 3.3V power supply output. These pins are the pins for SPI communication, the SCLK is the clock selected on the ADNS-3050.h C++ library in our case the Arduino DUE internal clock divided by 21 (4 MHz). The NCS is the pin which allows communication with more than one device by changing the state of this pin to HIGH or LOW. The MOSI and MISO pins are to send the data in both directions.</p>
+<p>The PCB and the lens must be removed from the optical mouse. The VDD, GND, MISO, MOSI, NCS and SCLK must be soldered to wires leading to the microcontroller with the microcontroller 3.3V power supply output. The SCLK is the clock selected on the ADNS-3050.h C++ library (in our case 4 MHz, the internal clock divided by 21 of the Arduino DUE used for the SQUAL measurements). The NCS pin allows communication with more than one device by changing the state to HIGH or LOW. The MOSI and MISO pins are to send the data in both directions.</p>
 <table>
 <thead>
 <tr>
@@ -179,7 +172,7 @@
 </tr>
 </tbody>
 </table>
-<p>The lens and the PCB are assembled with the PCB holder part 1 and 2 placing the lens as in Figure 1 and inserting the screws to attach both parts together. </p>
+<p>The lens and the PCB are assembled with the PCB holder part 1 and 2 by placing the lens as in Figure 1 and inserting the screws to attach both parts together. </p>
 <table>
 <thead>
 <tr>
@@ -188,11 +181,11 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><em>Figure 2. ADNS-3050 assembled with the lens.</em></td>
+<td align="center"><em>Figure 2. ADNS-3050 and lens assembled with the PCB holder.</em></td>
 </tr>
 </tbody>
 </table>
-<p>The provided library is the library created by Tom Wiggins on GitHub [1] for a 3D printable gaming optical mouse, a project also published on Hackaday [2]. The library has been modified duplicating the functions needed to control and get data from two optical mice.</p>
+<p>The provided library was created by Tom Wiggins and is available on GitHub <a href="#references">[1]</a> and Hackaday <a href="#references">[2]</a>. The library has been modified duplicating the functions needed to control and get data from two optical mice.</p>
 <h1 id="references">References</h1>
 <p>[1] <a href="https://github.com/Tom101222/Adns-3050-Optical-Sensor">https://github.com/Tom101222/Adns-3050-Optical-Sensor</a></p>
 <p>[2] <a href="https://hackaday.io/project/18344-adns-3050-optical-sensor-mouse">https://hackaday.io/project/18344-adns-3050-optical-sensor-mouse</a></p>
