@@ -1,2 +1,4 @@
 # RPM
-Rotation Platform for Mice documentation 
+Documentation files for the Rotation Platform for Mice
+
+v. 2022/10/12
