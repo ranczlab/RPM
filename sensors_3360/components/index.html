@@ -89,6 +89,22 @@
     </ul>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Instrument ring and head-holder</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Head-plate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Pupil Camera</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Embedded screens</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/components/">Components</a>
@@ -98,34 +114,11 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/VR/">Virtual Reality</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Head-holding system</span></p>
+                <p class="caption"><span class="caption-text">Characterization and software</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Platform characterization</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Headclamp</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Pupil Tracking system</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Characterization and validation</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Characterization</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/specification/">Specification</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Requirements</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">Troubleshooting</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Software</a>
                     </li>
                 </ul>
       </div>
@@ -166,7 +159,7 @@
             <div class="section">
               
                 <h1 id="components">Components</h1>
-<p>The PWM3360 has exceptional capabilities: high motion detection under speeds of 635 cm/s, and can deal with accelerations up to 50G. The register outputs the SQUAL value, a reference of the quality of the surface. The sensor is available for purchase from JACK Enterprises in Tindie [1]. In order to control it you will need to download the library PWM3360 from Sunjun Kim [1]. </p>
+<p>The PWM3360 has exceptional capabilities: high motion detection for speeds up to 635 cm/s and acceleration up to 50G. The register outputs the SQUAL value, a reference of the quality of the surface. The sensor is available for purchase from JACK Enterprises in Tindie <a href="#references">[1]</a>. To control it you must download the PWM3360 library <a href="#references">[2]</a>. </p>
 <p>The breakout board has the essential pins available and distributed in a way that makes it easy to connect:</p>
 <ul>
 <li>VI = 3.3V</li>
@@ -176,7 +169,7 @@
 <li>SS = CS0 -or- CS</li>
 <li>GD = GND</li>
 </ul>
-<p>The holder can be quickly 3D printed (<a href="../files/STL/PWM3360%20holder.stl">STL file</a> and <a href="../files/STP/PWM3360%20holder.stp">STP file</a>) and can be used with the Thorlabs parts described for the other sensors (ADNS 2610 and 3050). To attach the sensor with the holder only two M2.5 16 mm pan head screws and two M2.5 nuts are needed. The nuts can be pressed to fit on the holder and the bolts will hold the lens against the sensor without the need of glue (Figure 1):</p>
+<p>The holder can be 3D printed (<a href="../files/STL/PWM3360%20holder.stl">STL file</a> and <a href="../files/STP/PWM3360%20holder.stp">STP file</a>) and be used with the Thorlabs parts described for the other sensors (ADNS 2610 and 3050). To attach the sensor to the holder, two M2.5 16 mm pan head screws and two M2.5 nuts are needed. The nuts can be pressed to fit on the holder, and the bolts will hold the lens against the sensor without needing glue (Figure 1).</p>
 <table>
 <thead>
 <tr>
@@ -185,13 +178,13 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><em>Figure 1. P3D printed holder and screw holding system</em></td>
+<td align="center"><em>Figure 1. 3D printed holder and assembly</em></td>
 </tr>
 </tbody>
 </table>
 <h1 id="references">References</h1>
-<p>[1] <a href="https://www.tindie.com/products/jkicklighter/pmw3360-motion-sensor/">https://www.tindie.com/products/jkicklighter/pmw3360-motion-sensor/</a>
-[2] <a href="https://github.com/SunjunKim/PMW3360">https://github.com/SunjunKim/PMW3360</a></p>
+<p>[1] <a href="https://www.tindie.com/products/jkicklighter/pmw3360-motion-sensor/">https://www.tindie.com/products/jkicklighter/pmw3360-motion-sensor/</a></p>
+<p>[2] <a href="https://github.com/SunjunKim/PMW3360">https://github.com/SunjunKim/PMW3360</a></p>
               
             </div>
           </div>
@@ -199,7 +192,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../screens/components/" class="btn btn-neutral float-right" title="Components">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../holders/components/" class="btn btn-neutral float-right" title="Components">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../../sensors_3050/characterization/" class="btn btn-neutral" title="Characterization"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -231,7 +224,7 @@
       <span><a href="../../sensors_3050/characterization/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../screens/components/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../holders/components/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

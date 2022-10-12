@@ -91,6 +91,22 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../sensors_3360/components/">Components</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Instrument ring and head-holder</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Head-plate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Pupil Camera</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Embedded screens</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/components/">Components</a>
@@ -100,34 +116,11 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/VR/">Virtual Reality</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Head-holding system</span></p>
+                <p class="caption"><span class="caption-text">Characterization and software</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Platform characterization</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Headclamp</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Pupil Tracking system</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Characterization and validation</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Characterization</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/specification/">Specification</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Requirements</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">Troubleshooting</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Software</a>
                     </li>
                 </ul>
       </div>
@@ -168,7 +161,7 @@
             <div class="section">
               
                 <h1 id="schematics-and-electrical-connections">Schematics and electrical connections</h1>
-<p>The device is controlled using a custom PCB which connects the Teensy 3.5 development board with the DM542 stepper motor driver. The board is supplied at 24V and it has the voltage regulators to provide a 5V power supply to the Teensy. In addition, there are two bi-directional logic level shifters (5-3.3V), so up to eight 5V signals can be converted to 3.3V. We added two BNC connectors connected to the two Teensy DAC, SPI pins (3.3V) and some extra digital pins at 3.3V.  </p>
+<p>The device is controlled using a custom PCB which connects the Teensy 3.5 development board with the DM542 stepper motor driver. The board is supplied at 24V and voltage regulators provide a 5V power supply to the Teensy board. In addition, there are two bi-directional logic level shifters (5-3.3V), so up to eight 5V signals can be converted to 3.3V. Connections include two BNC connectors to the Teensy DACs, SPI pins (3.3V) and some extra digital pins at 3.3V.  </p>
 <table>
 <thead>
 <tr>
@@ -206,11 +199,7 @@
 </tr>
 </tbody>
 </table>
-<div class="admonition recommendation">
-<p class="admonition-title">Recommendation</p>
-<p>For electophysiological recordings, make sure all electronics components are located 50cm away from the rotary stage.</p>
-</div>
-<p>The emergency stop opens the 24V power supply circuit, the whole experimental device is disconnected if is pressed.</p>
+<p>The emergency stop opens the 24V power supply circuit. The whole experimental device is disconnected if pressed.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Before soldering the Emergency stop pins check the continuity between and the logic operation between pins. If the button is pressed, the circuit must be open.</p>
@@ -231,96 +220,96 @@
 <table>
 <thead>
 <tr>
-<th align="center">Component</th>
-<th align="center">Quantity</th>
-<th align="center">Supplier</th>
-<th align="center">Reference</th>
+<th>Component</th>
+<th>Quantity</th>
+<th>Supplier</th>
+<th>Reference</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">PCB</td>
-<td align="center">1</td>
-<td align="center">-</td>
-<td align="center"><a href="../files/Gerber%20files.zip">Gerber files</a>Electronics</td>
+<td>PCB</td>
+<td>1</td>
+<td>-</td>
+<td><a href="../files/Gerber%20files.zip">Gerber files</a></td>
 </tr>
 <tr>
-<td align="center">Logic Level Converter Module</td>
-<td align="center">2</td>
-<td align="center">Amazon</td>
-<td align="center">https://www.amazon.co.uk/gp/product/B0148BLZGE/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&amp;psc=1</td>
+<td>Logic Level Converter Module</td>
+<td>2</td>
+<td>Amazon</td>
+<td><a href="https://www.amazon.co.uk/gp/product/B0148BLZGE/ref=ppx_yo_dt_b_asin_title_o05_s00">link</a></td>
 </tr>
 <tr>
-<td align="center">Teensy 3.5</td>
-<td align="center">1</td>
-<td align="center">PJRC</td>
-<td align="center">https://www.pjrc.com/store/teensy35.html</td>
+<td>Teensy 3.5 microcontroller</td>
+<td>1</td>
+<td>PJRC</td>
+<td><a href="https://www.pjrc.com/store/teensy35.html">link</a></td>
 </tr>
 <tr>
-<td align="center">BNC connectors</td>
-<td align="center">2</td>
-<td align="center">RS Components</td>
-<td align="center">https://uk.rs-online.com/web/p/coaxial-connectors/7100453/</td>
+<td>BNC connectors</td>
+<td>2</td>
+<td>RS Components</td>
+<td><a href="https://uk.rs-online.com/web/p/coaxial-connectors/7100453/">link</a></td>
 </tr>
 <tr>
-<td align="center">12V voltage regulator L7812CV</td>
-<td align="center">1</td>
-<td align="center">RS Components</td>
-<td align="center">https://uk.rs-online.com/web/p/linear-voltage-regulators/7931355/</td>
+<td>12V voltage regulator L7812CV</td>
+<td>1</td>
+<td>RS Components</td>
+<td><a href="https://uk.rs-online.com/web/p/linear-voltage-regulators/7931355/">link</a></td>
 </tr>
 <tr>
-<td align="center">5V voltage regulator LM7805</td>
-<td align="center">1</td>
-<td align="center">RS Components</td>
-<td align="center">https://uk.rs-online.com/web/p/linear-voltage-regulators/7968060/</td>
+<td>5V voltage regulator LM7805</td>
+<td>1</td>
+<td>RS Components</td>
+<td><a href="https://uk.rs-online.com/web/p/linear-voltage-regulators/7968060/">link</a></td>
 </tr>
 <tr>
-<td align="center">Electrolytic capacitor 330 μF 25V</td>
-<td align="center">1</td>
-<td align="center">Ebay</td>
-<td align="center">https://www.ebay.co.uk/c/16029438608?iid=303554359855</td>
+<td>Electrolytic capacitor 330 μF 25V</td>
+<td>1</td>
+<td>Ebay</td>
+<td><a href="https://www.ebay.co.uk/c/16029438608?iid=303554359855">link</a></td>
 </tr>
 <tr>
-<td align="center">Electrolytic capacitor 47 μF 50V</td>
-<td align="center">1</td>
-<td align="center">Ebay</td>
-<td align="center"></td>
+<td>Electrolytic capacitor 47 μF 50V</td>
+<td>1</td>
+<td>Ebay</td>
+<td><a href="https://www.ebay.co.uk/c/16029438608?iid=303554359855">link</a></td>
 </tr>
 <tr>
-<td align="center">Electrolytic capacitor 1 μF 50V</td>
-<td align="center">1</td>
-<td align="center">Ebay</td>
-<td align="center"></td>
+<td>Electrolytic capacitor 1 μF 50V</td>
+<td>1</td>
+<td>Ebay</td>
+<td><a href="https://www.ebay.co.uk/c/16029438608?iid=303554359855">link</a></td>
 </tr>
 <tr>
-<td align="center">Ceramic capacitor 100 nF 25V</td>
-<td align="center">2</td>
-<td align="center">RS Components</td>
-<td align="center">https://uk.rs-online.com/web/p/mlccs-multilayer-ceramic-capacitors/5381203/</td>
+<td>Ceramic capacitor 100 nF 25V</td>
+<td>2</td>
+<td>RS Components</td>
+<td><a href="https://uk.rs-online.com/web/p/mlccs-multilayer-ceramic-capacitors/5381203/">link</a></td>
 </tr>
 <tr>
-<td align="center">Ceramic capacitor 330 nF 25V</td>
-<td align="center">2</td>
-<td align="center">RS Components</td>
-<td align="center">https://uk.rs-online.com/web/p/mlccs-multilayer-ceramic-capacitors/1726542/</td>
+<td>Ceramic capacitor 330 nF 25V</td>
+<td>2</td>
+<td>RS Components</td>
+<td><a href="https://uk.rs-online.com/web/p/mlccs-multilayer-ceramic-capacitors/1726542/">link</a></td>
 </tr>
 <tr>
-<td align="center">Standard female pin headers</td>
-<td align="center">6</td>
-<td align="center">Amazon</td>
-<td align="center">https://www.amazon.co.uk/Aussel-Pieces-Breakaway-Connector-Arduino-PIN-2-20PCS/dp/B01M69EA9O/ref=sr_1_3?dchild=1&amp;keywords=female+pin+header&amp;qid=1612883053&amp;sr=8-3</td>
+<td>Standard female pin headers</td>
+<td>6</td>
+<td>Amazon</td>
+<td><a href="https://www.amazon.co.uk/Aussel-Pieces-Breakaway-Connector-Arduino-PIN-2-20PCS/dp/B01M69EA9O/ref=sr_1_3">link</a></td>
 </tr>
 <tr>
-<td align="center">Emergency stop</td>
-<td align="center">1</td>
-<td align="center">RS Components</td>
-<td align="center">https://uk.rs-online.com/web/p/emergency-stop-push-buttons/4774890</td>
+<td>Emergency stop</td>
+<td>1</td>
+<td>RS Components</td>
+<td><a href="https://uk.rs-online.com/web/p/emergency-stop-push-buttons/4774890">link</a></td>
 </tr>
 <tr>
-<td align="center">Hall efect sensor</td>
-<td align="center">1</td>
-<td align="center">Amazon</td>
-<td align="center">https://www.amazon.co.uk/gp/product/B06XHG9CYN/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&amp;psc=1</td>
+<td>Hall efect sensor</td>
+<td>1</td>
+<td>Amazon</td>
+<td><a href="https://www.amazon.co.uk/gp/product/B06XHG9CYN/ref=ppx_yo_dt_b_asin_title_o07_s00">link</a></td>
 </tr>
 </tbody>
 </table>

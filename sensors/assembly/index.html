@@ -89,6 +89,22 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../sensors_3360/components/">Components</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Instrument ring and head-holder</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Head-plate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Pupil Camera</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Embedded screens</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/components/">Components</a>
@@ -98,34 +114,11 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/VR/">Virtual Reality</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Head-holding system</span></p>
+                <p class="caption"><span class="caption-text">Characterization and software</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Platform characterization</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Headclamp</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Pupil Tracking system</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Characterization and validation</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Characterization</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/specification/">Specification</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Requirements</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">Troubleshooting</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Software</a>
                     </li>
                 </ul>
       </div>
@@ -166,7 +159,7 @@
             <div class="section">
               
                 <h1 id="assembly-instructions">Assembly instructions</h1>
-<p>In order to use the mice sensors, the PCB must be removed from the optical mouse and the VDD, GND, SCK and SDIO must be soldered with wires to be connected to the microcontroller with the microcontroller internal 5V power supply.</p>
+<p>The PCB must be removed from the optical mouse first. Then the VDD, GND, SCK and SDIO pins must be soldered to wires leading to the microcontroller and its internal 5V power supply.</p>
 <table>
 <thead>
 <tr>
@@ -179,7 +172,8 @@
 </tr>
 </tbody>
 </table>
-<p>All the 3D printable parts must be printed, the parts have been designed to be printed optimally with an Objet 30 (Polyjet resin printer), and have also been printed with a Form 2 (SLS resin printer). The materials used are the Vero gray resin and the Clear V4 resin with the Objet 30 and the Form 2 respectively. For both printers the settings have been the default settings.</p>
+<p>Insert the two M3 brass threaded inserts into the sensor holder by applying pressure. 
+Attach the sensor to the sensor holder using 2 M3 screws.</p>
 <table>
 <thead>
 <tr>
@@ -188,16 +182,23 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><img alt="Figure3" src="../gif/Optical-sensor-assembly.gif" /></td>
-</tr>
-<tr>
-<td align="center"><em>Figure 2 and 3. Optical sensor assembly</em></td>
+<td align="center"><em>Figure 2 Optical sensor assembly</em></td>
 </tr>
 </tbody>
 </table>
-<p>Insert the two M3 brass threaded inserts by applying pressure. 
-Attach the sensor on the sensor holder using 2 M3 screws.
-Follow the instructions on Figure 3 to assemble the three Thorlabs components with the Sensor holder.</p>
+<p>Then follow the instructions in Figure 3 to assemble the three Thorlabs components with the sensor holder.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure3" src="../gif/Optical-sensor-assembly.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 3. Optical sensor assembly</em></td>
+</tr>
+</tbody>
+</table>
 <p>The lens must be glued to the PCB in the correct position, with the lens aligned with the optical flow sensor.</p>
 <table>
 <thead>
@@ -211,7 +212,7 @@ Follow the instructions on Figure 3 to assemble the three Thorlabs components wi
 </tr>
 </tbody>
 </table>
-<p>Attach the whole assembly on the rotary stage platform where the mark of 90 degrees is.</p>
+<p>Attach the whole assembly on the rotary stage platform (e.g. at 0 or 90 degrees to the animal's anteroposterior axis).</p>
 <table>
 <thead>
 <tr>
@@ -224,19 +225,7 @@ Follow the instructions on Figure 3 to assemble the three Thorlabs components wi
 </tr>
 </tbody>
 </table>
-<table>
-<thead>
-<tr>
-<th align="center"><img alt="Figure6" src="../gif/Optical-sensor-assembly-2.gif" /></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><em>Optical sensor - platform assembly</em></td>
-</tr>
-</tbody>
-</table>
-<p>Connect the pins on the Arduino 5V, GND, and two digital pins.</p>
+<p>Connect the pins on the PCB 5V, GND, and two digital pins as shown on the "electrical setup and configuration" page. </p>
               
             </div>
           </div>

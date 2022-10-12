@@ -89,6 +89,22 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../sensors_3360/components/">Components</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Instrument ring and head-holder</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Head-plate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Pupil Camera</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Embedded screens</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/components/">Components</a>
@@ -98,34 +114,11 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/VR/">Virtual Reality</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Head-holding system</span></p>
+                <p class="caption"><span class="caption-text">Characterization and software</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Platform characterization</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Headclamp</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Pupil Tracking system</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Characterization and validation</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Characterization</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/specification/">Specification</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Requirements</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">Troubleshooting</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Software</a>
                     </li>
                 </ul>
       </div>
@@ -165,19 +158,19 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="setup-driver-configuration">Setup driver configuration</h1>
-<p>The configuration of the motor driver for the position control is the corresponding to 25,000 steps per revolution on the motor shaft (150,000 steps per revolution on the rotary table):</p>
+                <h1 id="motor-driver-configuration">Motor driver configuration</h1>
+<p>The configuration of the stepper motor driver shown below for the position control corresponds to 25,000 steps per revolution on the motor shaft (150,000 steps per revolution on the rotary table):</p>
 <p><img alt="Figure1" src="../img/switches.png" /></p>
-<p>In order to control the closed loop response, we have explored how the different configurations of micro stepping of the driver DM542A match with the internal units of the optical motion sensor. In the case of the ADNS 2610, the measured average number of internal units per revolution is 9,391 and therefore the best micro stepping configuration is of 25,000 steps per revolution.
-The reason why we have chosen this configuration is because we have evaluated the relationship between the number of steps and the sensor internal units in each possible micro stepping configuration. The number of steps on the big pulley is 150,000 steps with a gear ratio of 6 between small and big pulley. Therefore, the number of steps per optical sensor unit is 15.97 steps. This configuration is also the most silent and helps reducing vibrations on the platform. </p>
-<p>To efficiently control the stepper motor we have used the TeensyStep library <a href="#references">[1]</a> which can control multiple stepper motors precisely at high speeds (300,000 steps/s) and accelerations (500,000 steps/s^2). We have implemented a proportional control between the angle measured on the Styrofoam sphere as a set point and the angle of the stepper motor measured from the internal counter of the stepper object using the method stepper.getPosition() <a href="#references">[2]</a>. The Proportional control uses the method controller.overrideSpeed() in order to change the rotational speed on the fly</p>
+<p>NOTE. To control the closed loop response, we have explored how the different configurations of micro-stepping of the driver DM542A match with the internal units of the optical motion sensor. In the case of the ADNS 2610, the measured average number of internal units per revolution is 9,391 and therefore the best micro stepping configuration is 25,000 steps per revolution.
+We have evaluated the relationship between the number of steps and the sensor internal units in each possible micro-stepping configuration. The number of steps on the big pulley is 150,000 steps with a gear ratio of 6 between the small and big pulley. Therefore, the number of steps per optical sensor unit is 15.97 steps. This configuration is also the most silent and helps reduce vibrations on the platform. </p>
+<p>We have used the TeensyStep library <a href="#references">[1]</a> which can control stepper motors precisely at high speeds (300,000 steps/s) and accelerations (500,000 steps/s^2). We have implemented a proportional control between the angle measured on the Styrofoam sphere as a set point and the angle of the stepper motor measured from the internal counter of the stepper object using the method stepper.getPosition() <a href="#references">[2]</a>. The proportional control uses the method controller.overrideSpeed() to change the rotational speed on the fly.</p>
 <p><img alt="equation1" src="https://latex.codecogs.com/gif.download?delta%20%3D%20%28setpoint%20-%20stepper.getPosition%28%29%29%20*%20%28%5Cfrac%7Bkp%7D%7BP_%7Binterval%7D%7D%29" /></p>
-<p>The encoder can be used to record the position separately or implement a close loop control using the encoder as a position reference.</p>
+<p>The encoder can be used to record the position separately or implement closed-loop control using the encoder as a position reference.</p>
 <p>The range of speed and acceleration we have tested with the rotary stage vary from 20 to 100 deg/s and 200 to 1200 deg/s^2.</p>
 <p>The main loop() execution period on the Teensy 3.5 at 120 MHz is approximately 270 µs therefore the program execution frequency is higher than 3 kHz where the position of the sensor is evaluated and sent to the stepper motor.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If the speed is increased the system will tend to overshoot, compromising the proportional constant (kp) of the control algorithm might have to be adjusted in order to get a better performance. That said, with the kp you will find on our code examples we always got good results.</p>
+<p>If the speed is increased, the system will tend to overshoot. The proportional constant (kp) of the control algorithm might have to be adjusted to get better performance. Using the kp in our code examples, we always got good results.</p>
 </div>
 <h1 id="references">References</h1>
 <p>[1] <a href="https://luni64.github.io/TeensyStep/">https://luni64.github.io/TeensyStep/</a></p>

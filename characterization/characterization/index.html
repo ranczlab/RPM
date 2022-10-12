@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Characterization - VestibularPlatform</title>
+  <title>Platform characterization - VestibularPlatform</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Characterization";
+    var mkdocs_page_name = "Platform characterization";
     var mkdocs_page_input_path = "characterization/characterization.md";
     var mkdocs_page_url = null;
   </script>
@@ -87,6 +87,22 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../sensors_3360/components/">Components</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Instrument ring and head-holder</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Head-plate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Pupil Camera</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Embedded screens</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/components/">Components</a>
@@ -96,36 +112,13 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/VR/">Virtual Reality</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Head-holding system</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Headclamp</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Pupil Tracking system</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Characterization and validation</span></p>
+                <p class="caption"><span class="caption-text">Characterization and software</span></p>
                 <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Characterization</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Platform characterization</a>
     <ul class="current">
     </ul>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../specification/">Specification</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../requirements/">Requirements</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">Troubleshooting</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../requirements/">Software</a>
                     </li>
                 </ul>
       </div>
@@ -149,11 +142,11 @@
     
       
         
-          <li>Characterization and validation &raquo;</li>
+          <li>Characterization and software &raquo;</li>
         
       
     
-    <li>Characterization</li>
+    <li>Platform characterization</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -165,11 +158,13 @@
           <div role="main">
             <div class="section">
               
-                <p>The rotary stage's accuracy and repeatability have been evaluated by recording the angle (°) of the incremental encoder (2400 pulses per revolution) and the angle obtained from the teensystep step counter simultaneously. Figure 1 shows one of many tests made to evaluate the stage performance, in this case without the load of the head holder. The stage is repeatly sent to the set point positions (0 and 360 degrees). The results obtained are 360.06 ± 0.11° and 0.04 ± 0.07°. </p>
+                <p>Terminology and measurements in this section follow <a href="https://www.newport.com/n/motion-basics-terminology-and-standards">this document</a>. 
+Users should conduct their own characterization with the specific platform weights and weight distributions. </p>
+<p>The rotary stage's accuracy and repeatability have been evaluated by recording the angle (°) of the incremental encoder (2400 pulses per revolution) and the angle obtained from the teensystep step counter simultaneously. Figure 1 shows an example test of the stage performance, in this case without the load of the head holder. The stage is repeatedly sent to the set point positions (0 and 360 degrees). The final positions are highly accurate (360.06 ± 0.11° and 0.04 ± 0.07°), suggesting little error accumulation. </p>
 <table>
 <thead>
 <tr>
-<th align="center"><img alt="Figure1" src="../img/performance_resized.png" /></th>
+<th align="center"><img alt="Figure1" src="../img/performance_resized.PNG" /></th>
 </tr>
 </thead>
 <tbody>
@@ -178,9 +173,9 @@
 </tr>
 </tbody>
 </table>
-<p>Data and code for this characterization are available <a href="../data/rotary_stage_validation/Closed%20loop%20without%20load/closed_loop_without_load.zip">here</a></p>
+<p>Data and code for this characterization are available <a href="../data/rotary_stage_validation/Closed%20loop%20without%20load/closed_loop_without_load.zip">here</a>.</p>
 <h2 id="minimum-incremental-motion-mim-and-backlash">Minimum incremental motion (MIM) and backlash</h2>
-<p>The Minimum incremental motion reliably measured corresponds to 0.1 degrees. The backlash observed in the worst case scenario corresponding to the offset created on the change in direction of the MIM test has been 0.04 degrees.</p>
+<p>The minimum incremental motion reliably measured corresponds to 0.1 degrees. The backlash, in the worst-case scenario corresponding to the offset created by the change in direction of the MIM tests, has been 0.04 degrees.</p>
 <table>
 <thead>
 <tr>
@@ -189,17 +184,18 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><em>Figure 2. Minimum incremental motion</em></td>
+<td align="center"><em>Figure 2. Minimum incremental motion measurement</em></td>
 </tr>
 </tbody>
 </table>
-<p>Data and code for this characterization are available <a href="../data/rotary_stage_validation/Minimum%20incremental%20motion%20%28MIM%29/MIM.zip">here</a></p>
+<p>Data and code for this characterization are available <a href="../data/rotary_stage_validation/Minimum%20incremental%20motion%20%28MIM%29/MIM.zip">here</a>.</p>
 <h2 id="accuracy-and-repeatability">Accuracy and repeatability</h2>
-<p>In order to evaluate the accuracy and repeatability of the rotary stage, a sequence of increments of 45 degrees in both rotation directions has been performed, collecting 8 position deviations in each direction (16 per each velocity/acceleration condition). The overall accuracy and repeatability have been calculated from all conditions according to the following equations (https://www.newport.com/n/motion-basics-terminology-and-standards).</p>
+<p>In order to evaluate the accuracy and repeatability of the rotary stage, a sequence of increments of 45 degrees in both rotation directions has been performed, collecting 8 position deviations in each direction (16 per each velocity/acceleration condition). The overall accuracy and repeatability have been calculated from all conditions according to the following equations:</p>
 <p>Accuracy:
 <img alt="equation1" src="https://latex.codecogs.com/gif.download?P%20%3D%20%7Cmax_%7Bj%7D%28%5Coverline%7B%5Coverline%7Bx_%7Bj%7D%7D%7D%29%20-%20min_%7Bj%7D%28%5Coverline%7B%5Coverline%7Bx_%7Bj%7D%7D%7D%29%7C%20%3D%20%7Cmax%28%5Cfrac%7B%5Coverline%7Bx_%7Bi%5Cuparrow%7D%20+%20x_%7Bi%5Cdownarrow%7D%7D%7D%7B2%7D%29%20-%20min%28%5Cfrac%7B%5Coverline%7Bx_%7Bi%5Cuparrow%7D%20+%20x_%7Bi%5Cdownarrow%7D%7D%7D%7B2%7D%29%7C" /></p>
 <p>Repeatability:
 <img alt="equation2" src="https://latex.codecogs.com/gif.download?R%20%3D%203%20%5Cfrac%7B1%7D%7B8%7D%5Csum_%7Bi%20%3D%201%7D%5E%7B8%7D%28%5Cfrac%7Bs_%7Bi%5Cuparrow%7D%20+%20s_%7Bi%5Cdownarrow%7D%7D%7B2%7D%29" /></p>
+<p>Where x<sub>i</sub> and s<sub>i</sub> are the average inaccuracy and the standard deviation, respectively, at position i. Up and down arrows represent the positive and negative directions. </p>
 <table>
 <thead>
 <tr>
@@ -216,29 +212,79 @@
 </tbody>
 </table>
 <h2 id="closed-loop-characterization">Closed-loop characterization</h2>
-<p>For the closed loop algorithm, the stability of the system response has been evaluated by the analysis of the step response for all previously described conditions (20-100 °·s¯¹ and 200-1200 °·s¯²). From that a contour plot has been extracted to be used as a map to avoid regions of inaccuracy and instability. Sometimes event achieving a small error the stage can overshoot as shown in figure 4b. On figures 4c and 4d are shown the regions to avoid errors and instabilities around the set point. </p>
+<p>For the closed loop algorithm, the stability of the system response has been evaluated by the analysis of the step response for all previously described conditions (20-100 °·s¯¹ and 200-1200 °·s¯²). A contour plot has been extracted to be used as a map to avoid regions of inaccuracy and instability. Sometimes even achieving a small error the stage can overshoot as shown in Figure 4 (right). </p>
 <table>
 <thead>
 <tr>
-<th align="center"><img alt="Figure4" src="../img/closed_loop_characterization_resized.png" /></th>
+<th align="center"><img alt="Figure4" src="../img/step_response.png" /></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center"><em>Figure 4. Step functions at 20 °·s¯¹ /200 °·s¯² and 100 °·s¯¹ /1200 °·s¯² (Figures a and b respectively).</em></td>
+<td align="center"><em>Figure 4. Example step functions (0-90°) at different velocity and acceleration values.</em></td>
 </tr>
 <tr>
-<td align="center"><em>Accuracy and repeatability test sequence (c) and average of absolute position deviation</em></td>
-</tr>
-<tr>
-<td align="center"><em>in every angular velocity and acceleration condition averaged over several attempts</em></td>
-</tr>
-<tr>
-<td align="center"><em>to reach the position imposed by a step function (d)</em></td>
+<td align="center"><em>(left) 20 °·s¯¹, 200 °·s¯². (right) 100 °·s¯¹, 1200 °·s¯².</em></td>
 </tr>
 </tbody>
 </table>
-<p>Data and code for this characterization are available <a href="../data/rotary_stage_validation/Closed%20loop/closed_loop.zip">here</a></p>
+<p>Figures 5 highlight regions in red to avoid errors and instability around the setpoint. </p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Figure5" src="../img/Average_and_SD_of_absolute_position_deviation.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Figure 5. Average (left) and standard deviation (right) of the absolute position deviation.</em></td>
+</tr>
+</tbody>
+</table>
+<p>Data and code for this characterization are available <a href="../data/rotary_stage_validation/Closed%20loop/closed_loop.zip">here</a>.</p>
+<h1 id="specifications-and-characterization-of-the-rotary-stage">Specifications and characterization of the rotary stage</h1>
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resolution stepper motor (°)</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td>Resolution of the encoder (°)</td>
+<td>0.024</td>
+</tr>
+<tr>
+<td>Accuracy (°)</td>
+<td>0.37</td>
+</tr>
+<tr>
+<td>Repeatability (°)</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>Minimum incremental motion (°)</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>Maximum angular velocity (°·s¯¹)</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Maximum angular acceleration (°·s¯²)</td>
+<td>1200</td>
+</tr>
+<tr>
+<td>Backlash (°)</td>
+<td>0.04</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div>
@@ -246,10 +292,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../specification/" class="btn btn-neutral float-right" title="Specification">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../requirements/" class="btn btn-neutral float-right" title="Software">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../pupil/assembly/" class="btn btn-neutral" title="Assembly"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../screens/VR/" class="btn btn-neutral" title="Virtual Reality"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -275,10 +321,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../pupil/assembly/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../screens/VR/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../specification/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../requirements/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

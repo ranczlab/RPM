@@ -74,7 +74,7 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#characterization">Characterization</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#calibration">Calibration</a>
+    <li class="toctree-l2"><a class="reference internal" href="#adjustments">Adjustments</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#data">Data</a>
     </li>
@@ -95,6 +95,22 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../sensors_3360/components/">Components</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Instrument ring and head-holder</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Head-plate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Pupil Camera</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Embedded screens</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/components/">Components</a>
@@ -104,34 +120,11 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../screens/VR/">Virtual Reality</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Head-holding system</span></p>
+                <p class="caption"><span class="caption-text">Characterization and software</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/components/">Components</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Platform characterization</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/headclamp/">Headclamp</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../holders/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Pupil Tracking system</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/components/">Components</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../pupil/assembly/">Assembly</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Characterization and validation</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/characterization/">Characterization</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/specification/">Specification</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Requirements</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">Troubleshooting</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../characterization/requirements/">Software</a>
                     </li>
                 </ul>
       </div>
@@ -172,8 +165,7 @@
             <div class="section">
               
                 <h1 id="sensor-characterization">Sensor characterization</h1>
-<p>The library needed to interface with the sensors is available on GitHub, created by Martijn The and modified by Zapmaker <a href="#references">[1]</a>.</p>
-<p>It gives us have added the access to the SQUAL register, which gives the reading of how good is the surface pattern to detect xy displacements. On Figure 1 you can see the relationship of error in percentage and SQUAL value for one revolution. The maximum SQUAL value was 120 and 0 for no detection of the surface.</p>
+<p>The library to interface with the sensors is available on GitHub <a href="#references">[1]</a>. It provides access to the SQUAL register, which gives the reading of how good is the surface pattern to detect xy displacements. Figure 1 shows the measurement error vs the SQUAL value for one revolution of the sphere. The maximum SQUAL value was 120 (0 means no surface detection).</p>
 <table>
 <thead>
 <tr>
@@ -182,13 +174,13 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><em>Figure 1. Relationship between error of the measurement and SQUAL value</em></td>
+<td align="center"><em>Figure 1. Relationship between the measurement error and the SQUAL value</em></td>
 </tr>
 </tbody>
 </table>
 <h2 id="characterization">Characterization</h2>
-<p>The characterization of the ADNS2610 optical sensors was performed collecting 30 revolutions using the different axes of the polystyrene sphere. The results obtained reflected the number of the optical sensor internal units per revolution which are 9.391 pn average. The polystyrene sphere has a perimeter of 61.86 cm, therefore, the number of sensor internal units per cm is equal to 151.81.</p>
-<p>The SQUAL value was recorded simultaneously and its average value was 82.56 ± 23.92. Figure 2 (left) shows distribution of the SQUAL value. Figure 2 (right) shows the relationship of the speed of rotation as the increment in mouse internal units between two samples and the SQUAL value. </p>
+<p>The characterization of the ADNS2610 optical sensors was performed by collecting 30 revolutions of the polystyrene sphere. The number of the optical sensor internal units per revolution was 9391 on average. The polystyrene sphere has a perimeter of 61.86 cm, thus, the number of sensor internal units per cm equals 151.81.</p>
+<p>SQUAL values were recorded simultaneously (average 82.56 ± 23.92). Figure 2 (left) shows the distribution of the SQUAL values. Figure 2 (right) shows the relationship between the rotation speed as the increment in sensor internal units between two samples and the SQUAL value. </p>
 <table>
 <thead>
 <tr>
@@ -197,14 +189,14 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><em>Figure 2. Distribution of the SQUAL value (left) and relationship between the speed and the SQUAL value</em></td>
+<td align="center"><em>Figure 2. Distribution of the SQUAL values (left). Speed vs SQUAL value relationship (right)</em></td>
 </tr>
 </tbody>
 </table>
-<h2 id="calibration">Calibration</h2>
-<p>The calibration can be done adjusting the vertical position of the equator of the sphere to make it coincident with the optical flow sensor. Then the horizontal position can be optimized by adjusting the horizontal micrometer until a SQUAL value higher than 100 has been achieved.</p>
+<h2 id="adjustments">Adjustments</h2>
+<p>The vertical and horizontal positions of the sensor should be adjusted. The vertical position can be adjusted by the Thorlab post for the sensor to match the sphere's equator. Then the horizontal position can be optimized by adjusting the sensor holder until a SQUAL value higher than 100 has been achieved.</p>
 <h2 id="data">Data</h2>
-<p>The data and code used for the sensor validation are available <a href="../../characterization/data/ADNS_2610_validation/ADNS_2610_validation.zip">here</a></p>
+<p>The data and code used for the sensor validation are available <a href="../../characterization/data/ADNS_2610_validation/ADNS_2610_validation.zip">here</a>.</p>
 <h1 id="references">References</h1>
 <p>[1] <a href="https://github.com/zapmaker/OptiMouse">https://github.com/zapmaker/OptiMouse</a></p>
               
