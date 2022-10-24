@@ -6,7 +6,7 @@
 
 ## Required Libraries
 -	[Arduino](Arduino/libraries.zip)
--	[ADNS 2160 optical sensor](https://github.com/zapmaker/OptiMouse) 
+-	[ADNS 2160 optical sensor with SQUAL readout](Arduino/libraries.zip) (based on the [OptiMouse library](https://github.com/zapmaker/OptiMouse))
 -	[Stepper motor control](https://luni64.github.io/TeensyStep/) 
 -	[Encoder](https://github.com/PaulStoffregen/Encoder) 
 
