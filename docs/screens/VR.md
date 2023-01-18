@@ -29,4 +29,4 @@ The 3D environment is created in Godot. The camera position is updated using a s
 The game is run via a bash script that ensures the game is running in full screen mode across the two monitors.
 The (x,y) coordinates of the player within the environment are automatically saved in a csv file. 
 
-The virtual corridor is available at [https://github.com/atranvan/corridor](https://github.com/atranvan/corridor)
+The virtual corridor is available [to download here](files/corridor-master.zip)
