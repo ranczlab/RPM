@@ -15,7 +15,7 @@ nav:
         - Components: sensors_3050/components.md
         - Assembly: sensors_3050/assembly.md
         - Characterization: sensors_3050/characterization.md
-    - Optical motion sensors, option 3, PWM-3360:
+    - Optical motion sensors, option 3, PMW3360:
         - Components: sensors_3360/components.md 
     - Instrument ring and head-holder:
         - Components: holders/components.md

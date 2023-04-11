@@ -1,6 +1,6 @@
 # Components
 
-The PWM3360 has exceptional capabilities: high motion detection for speeds up to 635 cm/s and acceleration up to 50G. The register outputs the SQUAL value, a reference of the quality of the surface. The sensor is available for purchase from JACK Enterprises in Tindie [[1]](#references). To control it you must download the PWM3360 library [[2]](#references). 
+The PMW3360 has exceptional capabilities: high motion detection for speeds up to 635 cm/s and acceleration up to 50G. The register outputs the SQUAL value, a reference of the quality of the surface. The sensor is available for purchase from JACK Enterprises in Tindie [[1]](#references). To control it you must download the PWM3360 library [[2]](#references). 
 
 The breakout board has the essential pins available and distributed in a way that makes it easy to connect:
 
