@@ -3,7 +3,7 @@
 This device provides vestibular stimulation for head-fixed experiments in mice. It can be combined with different physiological and behavioural recording modalities. It follows a modular, low-cost and open-source model.
 This documentation provides the assembly and operation guide for users with some experience in rapid manufacturing, electronics and development boards/microcontrollers, such as Arduino.
 
-In the accompanying paper [(link_goes_here)](), we show use cases for pupil tracking and recording head-direction cell activity during rotation. 
+In the [accompanying paper](https://www.biorxiv.org/content/10.1101/2023.05.19.541416v1), we show use cases for pupil tracking and recording head-direction cell activity during rotation. 
 
 | ![Figure1](img/full_view_components.png) |
 |:--:|
