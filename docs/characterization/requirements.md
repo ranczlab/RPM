@@ -14,7 +14,7 @@
 These are Optical motion sensor options with higher capabilities than the ADNS 2160. All of them use the SPI bus.
 
 -	[ADNS 3500](https://github.com/Tom101222/Adns-3050-Optical-Sensor)
--	[PWM3360](https://github.com/mrjohnk/PMW3360DM-T2QU) 
+-	[PWM3360](https://github.com/SunjunKim/PMW3360) 
 -	[ADNS 9800](https://github.com/mrjohnk/ADNS-9800) 
 
 

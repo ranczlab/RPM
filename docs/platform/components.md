@@ -69,7 +69,7 @@ The driver also has a DIP switch to select the desired micro-stepping mode:
 
 ## Belt selection
 
-We have adjusted the number of teeth ![zp](https://latex.codecogs.com/gif.download?z_p) of the big and the small pulley to get a gear ratio of 4:1 considering the minimum diameter of the big pulley as the outside diameter of the crossed roller bearing BRS RU124X. 
+We have adjusted the number of teeth ![zp](https://latex.codecogs.com/gif.download?z_p) of the big and the small pulley to get a gear ratio of 6:1 considering the minimum diameter of the big pulley as the outside diameter of the crossed roller bearing BRS RU124X. 
 
 ![equation11](https://latex.codecogs.com/gif.download?d_p%20%3D%20%5Cfrac%7Bp%5C%3Az_p%7D%7B%5Cpi%7D)
 
@@ -79,7 +79,7 @@ The diameter of the small (commercially available) pulley with ![zp](https://lat
 
 The number of teeth obtained for the big pulley is 216, and the distance between centers is 260 mm. These results determined the choice of the belt for our device.
 ## The timing belt 
-The size of the belt was calculated considering the outside diameter of the crossed roller bearing (OD > 165 mm) and the desired gear ratio of 1:4, which provides the stage of a maximum theoretical value of 12 Nm. To calculate the belt parameters, first, we consider the maximum width of the belt for our space constraints, which is 20 mm. According to the distance between centers and the pulley diameters, the required belt length is 927 mm, and the chosen belt width is 15 mm.
+The size of the belt was calculated considering the outside diameter of the crossed roller bearing (OD > 165 mm) and the desired gear ratio of 1:6, which provides the stage of a maximum theoretical value of 12 Nm. To calculate the belt parameters, first, we consider the maximum width of the belt for our space constraints, which is 20 mm. According to the distance between centers and the pulley diameters, the required belt length is 927 mm, and the chosen belt width is 15 mm.
 
 
 | ![figure6](img/Fig6-Main-Components_resized.png) |
@@ -141,15 +141,15 @@ The pulley driven by the Nema 23 stepper motor is a 36 teeth HTD3 metal pulley p
 | M5 nuts               	| 14       	| Thorlabs       	| [link](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=248)   |
 | BRS RU124X bearing    	| 1        	| BRS             	| [link](http://www.rigbrsbearing.com/product/ru124x-cross-roller-ring/)   |
 | Rotary Joint          	| 1        	| Senring         	| [link](https://www.senring.com/usb-conductive-slip-ring/dual-Channels/uh1256-02.html)  |
-| Encoder               	| 1        	| Amazon          	| [link](https://www.amazon.co.uk/Wisamic-Incremental-Encoder-Dc5-24v-Voltage/dp/B015GYY7XU/ref=sr_1_8) |
-| Hall effect sensor     	| 1        	| Amazon          	| [link](ttps://www.amazon.co.uk/gp/product/B06XHG9CYN/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1) |
+| Encoder               	| 1        	| Amazon          	| [link](https://www.amazon.co.uk/Incremental-Encoder-2-Phases-Photoelectric-Supplies/dp/B085774B2G) |
+| Hall effect sensor     	| 1        	| Amazon          	| [link](https://www.amazon.co.uk/AZDelivery-KY-003-Hall-Sensor-Parent/dp/B081B47VM1) |
 | Magnet                	| 1        	| RS Components 	| [link](https://uk.rs-online.com/web/p/neodymium-magnets/7924559)  |
 | Nema 23 motor & driver 	| 1        	| Ebay            	| [link](https://www.ebay.co.uk/itm/Free-Ship-Nema-23-Stepper-Motor-435oz-in-4-2A-Driver-Controller-DM542A/273805042516) |
 | M6 threaded insert    	|          	| RS Components     | [link](https://uk.rs-online.com/web/p/threaded-inserts/6647359)      |
 | M4 threaded insert	   	|          	| RS Components   	| [link](https://uk.rs-online.com/web/p/threaded-inserts/0278556)       |
 | M3 threaded insert   		|          	| RS Components   	| [link](https://uk.rs-online.com/web/p/threaded-inserts/0278534)     															|
 | Bearings              	| 2        	| RS Components 	| [link](https://uk.rs-online.com/web/p/neodymium-magnets/6190014) |
-| Pneumatic tube 			| 1			| Amazon			| [link](https://www.amazon.co.uk/Sourcingmap%C2%AE-12mm-Pneumatic-Tubing-Pipe/dp/B012THTYFI)		|
+| Pneumatic tube 			| 1			| Amazon			| [link](https://www.amazon.co.uk/ERGAOBOY-Blue-Polyurethane-Pneumatic-Connector/dp/B0BYHPLCDT/)		|
 | Pneumatic tube joint		| 1			| Amazon 			| [link](https://www.amazon.co.uk/Pneumatic-Connector-10Pcs-Fittings-Connectors/dp/B095RVTGTG)		|
 
 ## Datasheets and documents
