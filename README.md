@@ -1,4 +1,8 @@
-# RPM
-Documentation files for the Rotation Platform for Mice, as published in Journal of Neuroscience Methods
+# RPM v2
 
-Read the docs at https://ranczlab.github.io/RPM/
+HARP implementation of sensors and motor control, Bonsai integration for recording 
+New cameras, camera holders, lenses 
+New optical sensors 
+New probe holder (NPX) + NewScale manipulator for insertion 
+
+New motor - unclear of the specs though
