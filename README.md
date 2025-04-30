@@ -1,4 +1,2 @@
-# RPM
-Documentation files for the Rotation Platform for Mice, as published in Journal of Neuroscience Methods
-
-Read the docs at https://ranczlab.github.io/RPM/
+# RPM for 2p
+This is based on the Steinmeyer DT-240 direct drive motor. 
