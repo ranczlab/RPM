@@ -1,0 +1,8 @@
+Partlist exported from C:/Users/ferrerx/Desktop/Teensy boards/PCB teensy 1/Teensy 3.6 PCB 1 .sch at 12/10/2019 6:48 PM
+
+Qty Value      Device     Package    Parts                                                                               Description                          MF               MPN      OC_FARNELL OC_NEWARK POPULARITY
+9              PINHD-1X1  1X01       9, 10, GND, GND1, GND2, GND3, VCC, VCC1, VCC2                                       PIN HEADER                                                                          64        
+2              PINHD-1X24 1X24       TEENSYBOTTOM, TEENSYTOP                                                             PIN HEADER                                                                          2         
+7              PINHD-1X6  1X06       LLCA(3V3), LLCA(5V), LLCB(3V3), LLCB(5V), MCP4725(1), MCP4725(2), MCP4725(ADAFRUIT) PIN HEADER                                                                                    
+1              PINHD-1X8  1X08       INPUT                                                                               PIN HEADER                                                                                    
+5   1-227161-0 1-227161-0 AMP_227161 BNC1(DACMOD1), BNC2(DACMOD2), BNC3(DACMOD3)ADAFRUIT, BNC4(DAC0), BNC5(DAC1)         JACK,  RIGHT ANGLE, 50 OHM, PCB, BNC TYCO ELECTRONICS 1-227161 unknown    33B3200             

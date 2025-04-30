@@ -1,0 +1,10 @@
+Partlist exported from C:/Users/ferrerx/Desktop/Arduino Due Shield/BNC shield 5/BNC Shield 5.sch at 11/7/2019 3:08 PM
+
+Qty Value      Device         Package    Parts                                                                                     Description                          MF               MPN      OC_FARNELL OC_NEWARK POPULARITY
+1              PINHD-1X1      1X01       VCC                                                                                       PIN HEADER                                                                          64        
+1              PINHD-1X18     1X18       JP4                                                                                       PIN HEADER                                                                                    
+8              PINHD-1X6      1X06       FTDI, LLCA(3V3), LLCA(5V), LLCB(3V3), LLCB(5V), MCP4725(1), MCP4725(2), MCP4725(ADAFRUIT) PIN HEADER                                                                                    
+5   1-227161-0 1-227161-0     AMP_227161 BNC1(LICK), BNC2(DACMOD1), BNC3(DACMOD2), BNC4(DAC0), BNC5(DAC1)                          JACK,  RIGHT ANGLE, 50 OHM, PCB, BNC TYCO ELECTRONICS 1-227161 unknown    33B3200             
+1   10x1F-H8.5 PINHD-1X10_ARD 1X10       JP1                                                                                       PIN HEADER                                                                                    
+8   8x1F-H8.5  PINHD-1X8      1X08       JP2, JP2(EXT), JP3, JP5, JP6, JP6(EXT), JP7, JP7(EXT)                                     PIN HEADER                                                                                    
+1   GND        PINHD-1X1      1X01       GND                                                                                       PIN HEADER                                                                          64        
