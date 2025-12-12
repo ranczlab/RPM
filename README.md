@@ -7,6 +7,8 @@
 
 ### New motor - unclear of the specs though
 
+### Attempted head-movement sensing
+
 General folder structure:
 
 <img width="406" alt="image" src="https://github.com/user-attachments/assets/807a13ad-9601-4401-b066-5b36dd310ab4" />
