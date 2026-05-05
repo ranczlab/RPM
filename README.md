@@ -2,6 +2,7 @@
 
 ### HARP implementation of sensors and motor control, Bonsai integration for recording (add HARP synchroniser)
 HARP boards
+
 [H1](https://github.com/harp-tech/device.vestibularH1) - on platform
 - inputs: optical flow sensor, 2x lick port
 - outputs: 2x camera trigger; direct motor command (implemented in hardware?); 2x reward valve; GND, 3-5V and 12-24V power, USB to Bonsai
