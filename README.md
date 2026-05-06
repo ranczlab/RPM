@@ -7,13 +7,13 @@ HARP boards
 - inputs: optical flow sensor, 2x lick port
 - outputs: 2x camera trigger; direct motor command (implemented in hardware?); 2x reward valve; GND, 3-5V and 12-24V power, USB to Bonsai
 - bidirectional(?): I/O pin, HARP synchroniser (CLOCK SYNC)
-[Full list of H1 registers](https://github.com/harp-tech/device.vestibularH1/blob/main/Firmware/VestibularH1/registers.xls)
+[Full list of H1 registers](https://github.com/harp-tech/device.vestibularH1/blob/main/device.yml)
 
 [H2](https://github.com/harp-tech/device.vestibularH2) - off platform
 - inputs: Hall sensor; rotary encoder (external or from motor driver); emergency stop
 - outputs: motor; GND, 3-5V, 5-24V power, USB to Bonsai 
 - bidirectional(?): I/O pin, HARP synchroniser (CLOCK SYNC)
-[Full list of H2 registers](https://github.com/harp-tech/device.vestibularH2/blob/main/Firmware/VestibularH2/registers.xls)
+[Full list of H2 registers](https://github.com/harp-tech/device.vestibularH2/blob/main/device.yml)
 
 
 to add:
